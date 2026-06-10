@@ -114,7 +114,7 @@ vis/
 *.temp
 *.bak
 *.old
-*.log
+
 
 # ================================
 # Package / build artifacts
@@ -131,4 +131,3 @@ dist/
 .env.*
 !.env.example
 
-runs_janus/

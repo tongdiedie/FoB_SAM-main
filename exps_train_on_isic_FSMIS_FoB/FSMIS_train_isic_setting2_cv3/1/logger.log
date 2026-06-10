@@ -1,0 +1,104 @@
+2026-06-06 21:07:35,538 - INFO - main - Run "train_isic_setting2_cv3" with ID "1"
+2026-06-06 21:07:35,725 - INFO - main - Create model...
+2026-06-06 21:07:36,777 - INFO - main - Set optimizer...
+2026-06-06 21:07:36,780 - INFO - main - Load data...
+2026-06-06 21:07:36,788 - INFO - main - Start training...
+2026-06-06 21:07:36,788 - INFO - main - This is epoch "0" of "13" epochs.
+2026-06-06 21:08:12,557 - INFO - main - step 100: total_loss: 2231.2937713623046, prompt_loss: 2228.5668359375, contrastive_loss: 1.2216446566581727
+2026-06-06 21:08:26,206 - INFO - main - step 200: total_loss: 398.29705993652345, prompt_loss: 396.1163236999512, contrastive_loss: 1.2399565064907074
+2026-06-06 21:08:39,302 - INFO - main - step 300: total_loss: 169.4893963623047, prompt_loss: 167.5751523590088, contrastive_loss: 1.263957142829895
+2026-06-06 21:08:54,225 - INFO - main - step 400: total_loss: 100.31005767822266, prompt_loss: 98.43670837402344, contrastive_loss: 1.2701975631713867
+2026-06-06 21:09:09,416 - INFO - main - step 500: total_loss: 64.18647613525391, prompt_loss: 62.3097236251831, contrastive_loss: 1.292071144580841
+2026-06-06 21:09:23,294 - INFO - main - step 600: total_loss: 44.515187950134276, prompt_loss: 42.583092021942136, contrastive_loss: 1.2991368210315704
+2026-06-06 21:09:23,391 - INFO - main - This is epoch "1" of "13" epochs.
+2026-06-06 21:09:37,927 - INFO - main - step 700: total_loss: 33.45223638534546, prompt_loss: 31.505649280548095, contrastive_loss: 1.3029867601394653
+2026-06-06 21:09:53,028 - INFO - main - step 800: total_loss: 26.968372325897217, prompt_loss: 25.032889976501465, contrastive_loss: 1.3094386351108551
+2026-06-06 21:10:07,391 - INFO - main - step 900: total_loss: 20.08557209968567, prompt_loss: 18.177043390274047, contrastive_loss: 1.3079031682014466
+2026-06-06 21:10:22,185 - INFO - main - step 1000: total_loss: 16.612805833816527, prompt_loss: 14.691896524429321, contrastive_loss: 1.3155522000789643
+2026-06-06 21:10:22,185 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:10:35,452 - INFO - main - step 1100: total_loss: 13.904976835250855, prompt_loss: 11.968353452682495, contrastive_loss: 1.321093715429306
+2026-06-06 21:10:50,419 - INFO - main - step 1200: total_loss: 12.020775451660157, prompt_loss: 10.053879013061524, contrastive_loss: 1.3161941850185395
+2026-06-06 21:10:50,545 - INFO - main - This is epoch "2" of "13" epochs.
+2026-06-06 21:11:07,464 - INFO - main - step 1300: total_loss: 9.804651322364807, prompt_loss: 7.832541465759277, contrastive_loss: 1.329156105518341
+2026-06-06 21:11:22,634 - INFO - main - step 1400: total_loss: 8.630486440658569, prompt_loss: 6.680716528892517, contrastive_loss: 1.3190691351890564
+2026-06-06 21:11:36,826 - INFO - main - step 1500: total_loss: 7.751485595703125, prompt_loss: 5.807874479293823, contrastive_loss: 1.3259642386436463
+2026-06-06 21:11:50,211 - INFO - main - step 1600: total_loss: 7.170864052772522, prompt_loss: 5.216243026256561, contrastive_loss: 1.3303956580162049
+2026-06-06 21:12:05,188 - INFO - main - step 1700: total_loss: 6.390704126358032, prompt_loss: 4.449999973773957, contrastive_loss: 1.324450021982193
+2026-06-06 21:12:19,005 - INFO - main - step 1800: total_loss: 6.356552619934082, prompt_loss: 4.3791793131828305, contrastive_loss: 1.3299138677120208
+2026-06-06 21:12:19,133 - INFO - main - This is epoch "3" of "13" epochs.
+2026-06-06 21:12:34,696 - INFO - main - step 1900: total_loss: 5.853681783676148, prompt_loss: 3.9321689558029176, contrastive_loss: 1.3313802754878998
+2026-06-06 21:12:49,243 - INFO - main - step 2000: total_loss: 5.575553879737854, prompt_loss: 3.614622132778168, contrastive_loss: 1.3256939768791198
+2026-06-06 21:12:49,243 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:13:04,765 - INFO - main - step 2100: total_loss: 5.41410418510437, prompt_loss: 3.505745298862457, contrastive_loss: 1.3192654383182525
+2026-06-06 21:13:20,036 - INFO - main - step 2200: total_loss: 5.192195296287537, prompt_loss: 3.25762544631958, contrastive_loss: 1.3323195910453796
+2026-06-06 21:13:35,443 - INFO - main - step 2300: total_loss: 5.14914421081543, prompt_loss: 3.2327463030815125, contrastive_loss: 1.3304936647415162
+2026-06-06 21:13:50,714 - INFO - main - step 2400: total_loss: 4.892834017276764, prompt_loss: 2.9680737352371214, contrastive_loss: 1.3279707753658294
+2026-06-06 21:13:50,850 - INFO - main - This is epoch "4" of "13" epochs.
+2026-06-06 21:14:07,088 - INFO - main - step 2500: total_loss: 4.742480149269104, prompt_loss: 2.8056076872348785, contrastive_loss: 1.3339951062202453
+2026-06-06 21:14:20,749 - INFO - main - step 2600: total_loss: 4.71180849313736, prompt_loss: 2.816949429512024, contrastive_loss: 1.3248382329940795
+2026-06-06 21:14:36,709 - INFO - main - step 2700: total_loss: 4.684559609889984, prompt_loss: 2.7689242339134217, contrastive_loss: 1.3246713268756867
+2026-06-06 21:14:51,703 - INFO - main - step 2800: total_loss: 4.608531606197357, prompt_loss: 2.712174713611603, contrastive_loss: 1.3165777814388275
+2026-06-06 21:15:06,280 - INFO - main - step 2900: total_loss: 4.607848560810089, prompt_loss: 2.714798551797867, contrastive_loss: 1.3233108031749725
+2026-06-06 21:15:20,609 - INFO - main - step 3000: total_loss: 4.481330790519714, prompt_loss: 2.6262790966033935, contrastive_loss: 1.3214597153663634
+2026-06-06 21:15:20,609 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:15:21,071 - INFO - main - This is epoch "5" of "13" epochs.
+2026-06-06 21:15:35,355 - INFO - main - step 3100: total_loss: 4.438692238330841, prompt_loss: 2.5500691866874696, contrastive_loss: 1.3190656447410583
+2026-06-06 21:15:49,074 - INFO - main - step 3200: total_loss: 4.354392447471619, prompt_loss: 2.498901700973511, contrastive_loss: 1.3204860389232635
+2026-06-06 21:16:03,458 - INFO - main - step 3300: total_loss: 4.407799134254455, prompt_loss: 2.537260925769806, contrastive_loss: 1.32087451338768
+2026-06-06 21:16:16,962 - INFO - main - step 3400: total_loss: 4.3198488903045655, prompt_loss: 2.477077330350876, contrastive_loss: 1.3123742979764939
+2026-06-06 21:16:31,855 - INFO - main - step 3500: total_loss: 4.324464831352234, prompt_loss: 2.4665747916698457, contrastive_loss: 1.3140047574043274
+2026-06-06 21:16:46,587 - INFO - main - step 3600: total_loss: 4.351216523647309, prompt_loss: 2.4632026350498197, contrastive_loss: 1.3292498075962067
+2026-06-06 21:16:46,730 - INFO - main - This is epoch "6" of "13" epochs.
+2026-06-06 21:17:02,781 - INFO - main - step 3700: total_loss: 4.262647264003753, prompt_loss: 2.438259664773941, contrastive_loss: 1.307630444765091
+2026-06-06 21:17:17,423 - INFO - main - step 3800: total_loss: 4.156201992034912, prompt_loss: 2.345690177679062, contrastive_loss: 1.2978853750228883
+2026-06-06 21:17:33,653 - INFO - main - step 3900: total_loss: 4.189338712692261, prompt_loss: 2.381987890005112, contrastive_loss: 1.3075046527385712
+2026-06-06 21:17:48,442 - INFO - main - step 4000: total_loss: 4.265495955944061, prompt_loss: 2.4695770466327667, contrastive_loss: 1.2984402656555176
+2026-06-06 21:17:48,442 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:18:02,075 - INFO - main - step 4100: total_loss: 4.129230012893677, prompt_loss: 2.362209531068802, contrastive_loss: 1.2884972524642944
+2026-06-06 21:18:16,718 - INFO - main - step 4200: total_loss: 4.087440702915192, prompt_loss: 2.292364821434021, contrastive_loss: 1.2760095238685607
+2026-06-06 21:18:16,849 - INFO - main - This is epoch "7" of "13" epochs.
+2026-06-06 21:18:32,711 - INFO - main - step 4300: total_loss: 4.032471280097962, prompt_loss: 2.2643339478969575, contrastive_loss: 1.2782768988609314
+2026-06-06 21:18:47,574 - INFO - main - step 4400: total_loss: 4.085898120403289, prompt_loss: 2.342201125621796, contrastive_loss: 1.2659934115409852
+2026-06-06 21:19:00,161 - INFO - main - step 4500: total_loss: 3.923351728916168, prompt_loss: 2.2116872477531433, contrastive_loss: 1.243345023393631
+2026-06-06 21:19:14,416 - INFO - main - step 4600: total_loss: 3.965039703845978, prompt_loss: 2.27010834813118, contrastive_loss: 1.2424286913871765
+2026-06-06 21:19:28,868 - INFO - main - step 4700: total_loss: 3.9371752333641052, prompt_loss: 2.3177791225910185, contrastive_loss: 1.2289679610729218
+2026-06-06 21:19:43,330 - INFO - main - step 4800: total_loss: 3.819601709842682, prompt_loss: 2.20719122171402, contrastive_loss: 1.2093408405780792
+2026-06-06 21:19:43,466 - INFO - main - This is epoch "8" of "13" epochs.
+2026-06-06 21:19:58,587 - INFO - main - step 4900: total_loss: 3.807343876361847, prompt_loss: 2.242750943899155, contrastive_loss: 1.1850866627693177
+2026-06-06 21:20:13,394 - INFO - main - step 5000: total_loss: 3.770635359287262, prompt_loss: 2.24788982629776, contrastive_loss: 1.1473926228284836
+2026-06-06 21:20:13,395 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:20:27,825 - INFO - main - step 5100: total_loss: 3.7449219012260437, prompt_loss: 2.2200875341892243, contrastive_loss: 1.154806597828865
+2026-06-06 21:20:41,376 - INFO - main - step 5200: total_loss: 3.6666168475151064, prompt_loss: 2.1876637732982633, contrastive_loss: 1.132627040743828
+2026-06-06 21:20:55,137 - INFO - main - step 5300: total_loss: 3.6419503498077392, prompt_loss: 2.2245122671127318, contrastive_loss: 1.1018280816078185
+2026-06-06 21:21:09,132 - INFO - main - step 5400: total_loss: 3.6468325591087343, prompt_loss: 2.194023793935776, contrastive_loss: 1.0922885322570801
+2026-06-06 21:21:09,268 - INFO - main - This is epoch "9" of "13" epochs.
+2026-06-06 21:21:25,097 - INFO - main - step 5500: total_loss: 3.59840306520462, prompt_loss: 2.248006432056427, contrastive_loss: 1.0459087127447129
+2026-06-06 21:21:41,069 - INFO - main - step 5600: total_loss: 3.555570275783539, prompt_loss: 2.231652103662491, contrastive_loss: 1.0386484056711196
+2026-06-06 21:21:54,520 - INFO - main - step 5700: total_loss: 3.509071662425995, prompt_loss: 2.2343689393997193, contrastive_loss: 0.9713859719038009
+2026-06-06 21:22:08,931 - INFO - main - step 5800: total_loss: 3.3924894905090333, prompt_loss: 2.1832970058918, contrastive_loss: 0.945638456940651
+2026-06-06 21:22:22,295 - INFO - main - step 5900: total_loss: 3.4130602145195006, prompt_loss: 2.205585137605667, contrastive_loss: 0.9206042736768723
+2026-06-06 21:22:36,609 - INFO - main - step 6000: total_loss: 3.391693768501282, prompt_loss: 2.2143729233741762, contrastive_loss: 0.8813704997301102
+2026-06-06 21:22:36,609 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:22:37,084 - INFO - main - This is epoch "10" of "13" epochs.
+2026-06-06 21:22:51,371 - INFO - main - step 6100: total_loss: 3.2836931014060973, prompt_loss: 2.141687971353531, contrastive_loss: 0.885968611240387
+2026-06-06 21:23:08,109 - INFO - main - step 6200: total_loss: 3.3197964215278626, prompt_loss: 2.196422929763794, contrastive_loss: 0.8273416417837143
+2026-06-06 21:23:22,349 - INFO - main - step 6300: total_loss: 3.2292765522003175, prompt_loss: 2.167711606025696, contrastive_loss: 0.7909680914878845
+2026-06-06 21:23:35,922 - INFO - main - step 6400: total_loss: 3.1607963752746584, prompt_loss: 2.2036086809635163, contrastive_loss: 0.716993120610714
+2026-06-06 21:23:51,810 - INFO - main - step 6500: total_loss: 3.1602370023727415, prompt_loss: 2.190005886554718, contrastive_loss: 0.666910610795021
+2026-06-06 21:24:06,746 - INFO - main - step 6600: total_loss: 3.085933063030243, prompt_loss: 2.172233922481537, contrastive_loss: 0.661870287656784
+2026-06-06 21:24:06,888 - INFO - main - This is epoch "11" of "13" epochs.
+2026-06-06 21:24:23,251 - INFO - main - step 6700: total_loss: 3.058527293205261, prompt_loss: 2.189481993317604, contrastive_loss: 0.6098780891299248
+2026-06-06 21:24:35,706 - INFO - main - step 6800: total_loss: 2.9525561213493345, prompt_loss: 2.111120293140411, contrastive_loss: 0.5602178829908371
+2026-06-06 21:24:50,301 - INFO - main - step 6900: total_loss: 3.0365455508232118, prompt_loss: 2.153817516565323, contrastive_loss: 0.5497378487884998
+2026-06-06 21:25:03,856 - INFO - main - step 7000: total_loss: 2.9555812311172485, prompt_loss: 2.2194120931625365, contrastive_loss: 0.47587338119745254
+2026-06-06 21:25:03,856 - INFO - main - ###### Taking snapshot ######
+2026-06-06 21:25:19,489 - INFO - main - step 7100: total_loss: 2.93715158700943, prompt_loss: 2.166765857934952, contrastive_loss: 0.48786234207451346
+2026-06-06 21:25:33,473 - INFO - main - step 7200: total_loss: 2.8515386044979096, prompt_loss: 2.1103240048885343, contrastive_loss: 0.46708366096019743
+2026-06-06 21:25:33,615 - INFO - main - This is epoch "12" of "13" epochs.
+2026-06-06 21:25:49,434 - INFO - main - step 7300: total_loss: 2.771191141605377, prompt_loss: 2.118058922290802, contrastive_loss: 0.36216064501553774
+2026-06-06 21:26:04,616 - INFO - main - step 7400: total_loss: 2.744020872116089, prompt_loss: 2.132768588066101, contrastive_loss: 0.29718158720061183
+2026-06-06 21:26:19,786 - INFO - main - step 7500: total_loss: 2.7658307588100435, prompt_loss: 2.038686685562134, contrastive_loss: 0.4033820320200175
+2026-06-06 21:26:33,272 - INFO - main - step 7600: total_loss: 2.7110877728462217, prompt_loss: 2.069155819416046, contrastive_loss: 0.3406389600224793
+2026-06-06 21:26:48,316 - INFO - main - step 7700: total_loss: 2.7112164342403413, prompt_loss: 2.1004069268703462, contrastive_loss: 0.3138961346098222
+2026-06-06 21:27:03,450 - INFO - main - step 7800: total_loss: 2.609822288751602, prompt_loss: 2.0949607563018797, contrastive_loss: 0.24232597132213413
+2026-06-06 21:27:03,646 - INFO - main - End of training.

@@ -1,0 +1,110 @@
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/munch/__init__.py:24: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO - FSMIS - Running command 'main'
+INFO - FSMIS - Started run with ID "1"
+INFO - main - Run "test_SABS_cv3" with ID "1"
+INFO - main - Create model...
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+INFO - main - Load data...
+INFO - main - Starting validation...
+INFO - main - Test Class: SPLEEN
+Using model type vit_h
+/home/tong/code/medical/FoB_SAM-main/models/FoB.py:373: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:347.)
+  spt_fts_ = [[self.getFeatures(supp_fts[[[0], way, shot]], supp_mask[[0], way, shot])
+INFO - main - Tested query volume: /sabs_CT_normalized/image_23.nii.gz.
+INFO - main - Dice score: 0.9283367991447449
+INFO - main - 23 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_24.nii.gz.
+INFO - main - Dice score: 0.9605461359024048
+INFO - main - 24 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_21.nii.gz.
+INFO - main - Dice score: 0.5338407158851624
+INFO - main - 21 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_22.nii.gz.
+INFO - main - Dice score: 0.8181486129760742
+INFO - main - 22 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_19.nii.gz.
+INFO - main - Dice score: 0.9476739168167114
+INFO - main - 19 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_18.nii.gz.
+INFO - main - Dice score: 0.942783534526825
+INFO - main - 18 has been saved. 
+INFO - main - Test Class: SPLEEN
+INFO - main - Mean class IoU: 0.7731709480285645
+INFO - main - Mean class Dice: 0.8552215695381165
+INFO - main - Test Class: RK
+INFO - main - Tested query volume: /sabs_CT_normalized/image_22.nii.gz.
+INFO - main - Dice score: 0.9058659076690674
+INFO - main - 22 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_19.nii.gz.
+INFO - main - Dice score: 0.8879269361495972
+INFO - main - 19 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_21.nii.gz.
+INFO - main - Dice score: 0.9162321090698242
+INFO - main - 21 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_18.nii.gz.
+INFO - main - Dice score: 0.8293530344963074
+INFO - main - 18 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_24.nii.gz.
+INFO - main - Dice score: 0.876296877861023
+INFO - main - 24 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_23.nii.gz.
+INFO - main - Dice score: 0.9084761142730713
+INFO - main - 23 has been saved. 
+INFO - main - Test Class: RK
+INFO - main - Mean class IoU: 0.7987289428710938
+INFO - main - Mean class Dice: 0.8873584866523743
+INFO - main - Test Class: LK
+INFO - main - Tested query volume: /sabs_CT_normalized/image_24.nii.gz.
+INFO - main - Dice score: 0.9052530527114868
+INFO - main - 24 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_21.nii.gz.
+INFO - main - Dice score: 0.8208756446838379
+INFO - main - 21 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_22.nii.gz.
+INFO - main - Dice score: 0.8393287062644958
+INFO - main - 22 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_18.nii.gz.
+INFO - main - Dice score: 0.8941859006881714
+INFO - main - 18 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_23.nii.gz.
+INFO - main - Dice score: 0.9299271106719971
+INFO - main - 23 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_19.nii.gz.
+INFO - main - Dice score: 0.9293758273124695
+INFO - main - 19 has been saved. 
+INFO - main - Test Class: LK
+INFO - main - Mean class IoU: 0.7986573576927185
+INFO - main - Mean class Dice: 0.886491060256958
+INFO - main - Test Class: LIVER
+INFO - main - Tested query volume: /sabs_CT_normalized/image_23.nii.gz.
+INFO - main - Dice score: 0.8376063108444214
+INFO - main - 23 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_24.nii.gz.
+INFO - main - Dice score: 0.8923529386520386
+INFO - main - 24 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_21.nii.gz.
+INFO - main - Dice score: 0.8299329280853271
+INFO - main - 21 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_19.nii.gz.
+INFO - main - Dice score: 0.7599126100540161
+INFO - main - 19 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_18.nii.gz.
+INFO - main - Dice score: 0.8683612942695618
+INFO - main - 18 has been saved. 
+INFO - main - Tested query volume: /sabs_CT_normalized/image_22.nii.gz.
+INFO - main - Dice score: 0.8938131928443909
+INFO - main - 22 has been saved. 
+INFO - main - Test Class: LIVER
+INFO - main - Mean class IoU: 0.7372786402702332
+INFO - main - Mean class Dice: 0.8469964861869812
+INFO - main - Final results...
+INFO - main - Mean IoU: {'SPLEEN': 0.7731709480285645, 'RK': 0.7987289428710938, 'LK': 0.7986573576927185, 'LIVER': 0.7372786402702332}
+INFO - main - Mean Dice: {'SPLEEN': 0.8552215695381165, 'RK': 0.8873584866523743, 'LK': 0.886491060256958, 'LIVER': 0.8469964861869812}
+INFO - main - Whole mean Dice: 0.8690169006586075
+INFO - main - End of validation.
+INFO - FSMIS - Result: 1
+INFO - FSMIS - Completed after 0:03:49

@@ -1,0 +1,86 @@
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/munch/__init__.py:24: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO - FSMIS - Running command 'main'
+INFO - FSMIS - Started run with ID "1"
+INFO - main - Run "test_CHAOST2_cv3" with ID "1"
+INFO - main - Create model...
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/tong/anaconda3/envs/fobsam/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+INFO - main - Load data...
+INFO - main - Starting validation...
+INFO - main - Test Class: LIVER
+Using model type vit_h
+/home/tong/code/medical/FoB_SAM-main/models/FoB.py:373: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /pytorch/torch/csrc/autograd/python_variable_indexing.cpp:347.)
+  spt_fts_ = [[self.getFeatures(supp_fts[[[0], way, shot]], supp_mask[[0], way, shot])
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+INFO - main - Dice score: 0.8717373609542847
+INFO - main - 31 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+INFO - main - Dice score: 0.8637743592262268
+INFO - main - 32 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+INFO - main - Dice score: 0.7895926237106323
+INFO - main - 34 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+INFO - main - Dice score: 0.7976848483085632
+INFO - main - 36 has been saved. 
+INFO - main - Test Class: LIVER
+INFO - main - Mean class IoU: 0.7121610641479492
+INFO - main - Mean class Dice: 0.8306973576545715
+INFO - main - Test Class: RK
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+INFO - main - Dice score: 0.9374510049819946
+INFO - main - 32 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+INFO - main - Dice score: 0.9342291355133057
+INFO - main - 31 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+INFO - main - Dice score: 0.9030900597572327
+INFO - main - 34 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+INFO - main - Dice score: 0.7476367950439453
+INFO - main - 36 has been saved. 
+INFO - main - Test Class: RK
+INFO - main - Mean class IoU: 0.7947816252708435
+INFO - main - Mean class Dice: 0.8806017637252808
+INFO - main - Test Class: LK
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+INFO - main - Dice score: 0.9103804230690002
+INFO - main - 32 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+INFO - main - Dice score: 0.87176913022995
+INFO - main - 36 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+INFO - main - Dice score: 0.869026780128479
+INFO - main - 31 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+INFO - main - Dice score: 0.7507677674293518
+INFO - main - 34 has been saved. 
+INFO - main - Test Class: LK
+INFO - main - Mean class IoU: 0.7443904280662537
+INFO - main - Mean class Dice: 0.8504860401153564
+INFO - main - Test Class: SPLEEN
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+INFO - main - Dice score: 0.7963069081306458
+INFO - main - 34 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+INFO - main - Dice score: 0.8220595121383667
+INFO - main - 32 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+INFO - main - Dice score: 0.8270313739776611
+INFO - main - 31 has been saved. 
+INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+INFO - main - Dice score: 0.9188094139099121
+INFO - main - 36 has been saved. 
+INFO - main - Test Class: SPLEEN
+INFO - main - Mean class IoU: 0.7285799980163574
+INFO - main - Mean class Dice: 0.8410518169403076
+INFO - main - Final results...
+INFO - main - Mean IoU: {'LIVER': 0.7121610641479492, 'RK': 0.7947816252708435, 'LK': 0.7443904280662537, 'SPLEEN': 0.7285799980163574}
+INFO - main - Mean Dice: {'LIVER': 0.8306973576545715, 'RK': 0.8806017637252808, 'LK': 0.8504860401153564, 'SPLEEN': 0.8410518169403076}
+INFO - main - Whole mean Dice: 0.8507092446088791
+INFO - main - End of validation.
+INFO - FSMIS - Result: 1
+INFO - FSMIS - Completed after 0:01:40

@@ -1,0 +1,73 @@
+2026-06-05 15:59:17,107 - INFO - main - Run "test_CHAOST2_cv3" with ID "1"
+2026-06-05 15:59:17,288 - INFO - main - Create model...
+2026-06-05 15:59:25,267 - INFO - main - Load data...
+2026-06-05 15:59:25,269 - INFO - main - Starting validation...
+2026-06-05 15:59:25,269 - INFO - main - Test Class: LIVER
+2026-06-05 15:59:52,789 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+2026-06-05 15:59:52,790 - INFO - main - Dice score: 0.8717373609542847
+2026-06-05 15:59:52,798 - INFO - main - 31 has been saved. 
+2026-06-05 16:00:00,617 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+2026-06-05 16:00:00,618 - INFO - main - Dice score: 0.8637743592262268
+2026-06-05 16:00:00,631 - INFO - main - 32 has been saved. 
+2026-06-05 16:00:06,015 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+2026-06-05 16:00:06,015 - INFO - main - Dice score: 0.7895926237106323
+2026-06-05 16:00:06,026 - INFO - main - 34 has been saved. 
+2026-06-05 16:00:11,891 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+2026-06-05 16:00:11,892 - INFO - main - Dice score: 0.7976848483085632
+2026-06-05 16:00:11,901 - INFO - main - 36 has been saved. 
+2026-06-05 16:00:12,011 - INFO - main - Test Class: LIVER
+2026-06-05 16:00:12,011 - INFO - main - Mean class IoU: 0.7121610641479492
+2026-06-05 16:00:12,011 - INFO - main - Mean class Dice: 0.8306973576545715
+2026-06-05 16:00:12,012 - INFO - main - Test Class: RK
+2026-06-05 16:00:16,506 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+2026-06-05 16:00:16,507 - INFO - main - Dice score: 0.9374510049819946
+2026-06-05 16:00:16,512 - INFO - main - 32 has been saved. 
+2026-06-05 16:00:19,436 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+2026-06-05 16:00:19,437 - INFO - main - Dice score: 0.9342291355133057
+2026-06-05 16:00:19,440 - INFO - main - 31 has been saved. 
+2026-06-05 16:00:22,852 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+2026-06-05 16:00:22,853 - INFO - main - Dice score: 0.9030900597572327
+2026-06-05 16:00:22,857 - INFO - main - 34 has been saved. 
+2026-06-05 16:00:26,277 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+2026-06-05 16:00:26,277 - INFO - main - Dice score: 0.7476367950439453
+2026-06-05 16:00:26,281 - INFO - main - 36 has been saved. 
+2026-06-05 16:00:26,399 - INFO - main - Test Class: RK
+2026-06-05 16:00:26,399 - INFO - main - Mean class IoU: 0.7947816252708435
+2026-06-05 16:00:26,399 - INFO - main - Mean class Dice: 0.8806017637252808
+2026-06-05 16:00:26,399 - INFO - main - Test Class: LK
+2026-06-05 16:00:32,163 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+2026-06-05 16:00:32,163 - INFO - main - Dice score: 0.9103804230690002
+2026-06-05 16:00:32,169 - INFO - main - 32 has been saved. 
+2026-06-05 16:00:35,578 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+2026-06-05 16:00:35,578 - INFO - main - Dice score: 0.87176913022995
+2026-06-05 16:00:35,582 - INFO - main - 36 has been saved. 
+2026-06-05 16:00:38,756 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+2026-06-05 16:00:38,756 - INFO - main - Dice score: 0.869026780128479
+2026-06-05 16:00:38,760 - INFO - main - 31 has been saved. 
+2026-06-05 16:00:42,671 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+2026-06-05 16:00:42,672 - INFO - main - Dice score: 0.7507677674293518
+2026-06-05 16:00:42,677 - INFO - main - 34 has been saved. 
+2026-06-05 16:00:42,792 - INFO - main - Test Class: LK
+2026-06-05 16:00:42,792 - INFO - main - Mean class IoU: 0.7443904280662537
+2026-06-05 16:00:42,792 - INFO - main - Mean class Dice: 0.8504860401153564
+2026-06-05 16:00:42,793 - INFO - main - Test Class: SPLEEN
+2026-06-05 16:00:46,749 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_34.nii.gz.
+2026-06-05 16:00:46,749 - INFO - main - Dice score: 0.7963069081306458
+2026-06-05 16:00:46,753 - INFO - main - 34 has been saved. 
+2026-06-05 16:00:50,658 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_32.nii.gz.
+2026-06-05 16:00:50,659 - INFO - main - Dice score: 0.8220595121383667
+2026-06-05 16:00:50,664 - INFO - main - 32 has been saved. 
+2026-06-05 16:00:54,075 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_31.nii.gz.
+2026-06-05 16:00:54,075 - INFO - main - Dice score: 0.8270313739776611
+2026-06-05 16:00:54,079 - INFO - main - 31 has been saved. 
+2026-06-05 16:00:56,757 - INFO - main - Tested query volume: /chaos_MR_T2_normalized/image_36.nii.gz.
+2026-06-05 16:00:56,757 - INFO - main - Dice score: 0.9188094139099121
+2026-06-05 16:00:56,761 - INFO - main - 36 has been saved. 
+2026-06-05 16:00:56,871 - INFO - main - Test Class: SPLEEN
+2026-06-05 16:00:56,871 - INFO - main - Mean class IoU: 0.7285799980163574
+2026-06-05 16:00:56,871 - INFO - main - Mean class Dice: 0.8410518169403076
+2026-06-05 16:00:56,871 - INFO - main - Final results...
+2026-06-05 16:00:56,871 - INFO - main - Mean IoU: {'LIVER': 0.7121610641479492, 'RK': 0.7947816252708435, 'LK': 0.7443904280662537, 'SPLEEN': 0.7285799980163574}
+2026-06-05 16:00:56,871 - INFO - main - Mean Dice: {'LIVER': 0.8306973576545715, 'RK': 0.8806017637252808, 'LK': 0.8504860401153564, 'SPLEEN': 0.8410518169403076}
+2026-06-05 16:00:56,872 - INFO - main - Whole mean Dice: 0.8507092446088791
+2026-06-05 16:00:56,872 - INFO - main - End of validation.

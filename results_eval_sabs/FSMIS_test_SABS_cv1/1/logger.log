@@ -1,0 +1,97 @@
+2026-06-05 15:38:39,401 - INFO - main - Run "test_SABS_cv1" with ID "1"
+2026-06-05 15:38:39,587 - INFO - main - Create model...
+2026-06-05 15:38:47,581 - INFO - main - Load data...
+2026-06-05 15:38:47,583 - INFO - main - Starting validation...
+2026-06-05 15:38:47,583 - INFO - main - Test Class: SPLEEN
+2026-06-05 15:39:17,001 - INFO - main - Tested query volume: /sabs_CT_normalized/image_11.nii.gz.
+2026-06-05 15:39:17,001 - INFO - main - Dice score: 0.930834949016571
+2026-06-05 15:39:17,008 - INFO - main - 11 has been saved. 
+2026-06-05 15:39:21,420 - INFO - main - Tested query volume: /sabs_CT_normalized/image_12.nii.gz.
+2026-06-05 15:39:21,420 - INFO - main - Dice score: 0.8191966414451599
+2026-06-05 15:39:21,425 - INFO - main - 12 has been saved. 
+2026-06-05 15:39:27,053 - INFO - main - Tested query volume: /sabs_CT_normalized/image_9.nii.gz.
+2026-06-05 15:39:27,053 - INFO - main - Dice score: 0.3277924060821533
+2026-06-05 15:39:27,060 - INFO - main - 9 has been saved. 
+2026-06-05 15:39:32,201 - INFO - main - Tested query volume: /sabs_CT_normalized/image_10.nii.gz.
+2026-06-05 15:39:32,201 - INFO - main - Dice score: 0.4289984107017517
+2026-06-05 15:39:32,207 - INFO - main - 10 has been saved. 
+2026-06-05 15:39:38,824 - INFO - main - Tested query volume: /sabs_CT_normalized/image_7.nii.gz.
+2026-06-05 15:39:38,824 - INFO - main - Dice score: 0.7062560319900513
+2026-06-05 15:39:38,832 - INFO - main - 7 has been saved. 
+2026-06-05 15:39:48,887 - INFO - main - Tested query volume: /sabs_CT_normalized/image_6.nii.gz.
+2026-06-05 15:39:48,887 - INFO - main - Dice score: 0.9371048808097839
+2026-06-05 15:39:48,898 - INFO - main - 6 has been saved. 
+2026-06-05 15:39:49,011 - INFO - main - Test Class: SPLEEN
+2026-06-05 15:39:49,011 - INFO - main - Mean class IoU: 0.5768385529518127
+2026-06-05 15:39:49,011 - INFO - main - Mean class Dice: 0.6916971802711487
+2026-06-05 15:39:49,011 - INFO - main - Test Class: RK
+2026-06-05 15:39:59,724 - INFO - main - Tested query volume: /sabs_CT_normalized/image_10.nii.gz.
+2026-06-05 15:39:59,725 - INFO - main - Dice score: 0.8672297596931458
+2026-06-05 15:39:59,734 - INFO - main - 10 has been saved. 
+2026-06-05 15:40:04,629 - INFO - main - Tested query volume: /sabs_CT_normalized/image_7.nii.gz.
+2026-06-05 15:40:04,629 - INFO - main - Dice score: 0.30592283606529236
+2026-06-05 15:40:04,635 - INFO - main - 7 has been saved. 
+2026-06-05 15:40:13,456 - INFO - main - Tested query volume: /sabs_CT_normalized/image_9.nii.gz.
+2026-06-05 15:40:13,457 - INFO - main - Dice score: 0.9069086909294128
+2026-06-05 15:40:13,466 - INFO - main - 9 has been saved. 
+2026-06-05 15:40:22,529 - INFO - main - Tested query volume: /sabs_CT_normalized/image_6.nii.gz.
+2026-06-05 15:40:22,530 - INFO - main - Dice score: 0.870814323425293
+2026-06-05 15:40:22,539 - INFO - main - 6 has been saved. 
+2026-06-05 15:40:27,440 - INFO - main - Tested query volume: /sabs_CT_normalized/image_12.nii.gz.
+2026-06-05 15:40:27,440 - INFO - main - Dice score: 0.8997982144355774
+2026-06-05 15:40:27,446 - INFO - main - 12 has been saved. 
+2026-06-05 15:40:32,820 - INFO - main - Tested query volume: /sabs_CT_normalized/image_11.nii.gz.
+2026-06-05 15:40:32,821 - INFO - main - Dice score: 0.7554948925971985
+2026-06-05 15:40:32,827 - INFO - main - 11 has been saved. 
+2026-06-05 15:40:32,945 - INFO - main - Test Class: RK
+2026-06-05 15:40:32,945 - INFO - main - Mean class IoU: 0.6619901657104492
+2026-06-05 15:40:32,945 - INFO - main - Mean class Dice: 0.7676947712898254
+2026-06-05 15:40:32,945 - INFO - main - Test Class: LK
+2026-06-05 15:40:39,709 - INFO - main - Tested query volume: /sabs_CT_normalized/image_12.nii.gz.
+2026-06-05 15:40:39,709 - INFO - main - Dice score: 0.8534587025642395
+2026-06-05 15:40:39,715 - INFO - main - 12 has been saved. 
+2026-06-05 15:40:49,293 - INFO - main - Tested query volume: /sabs_CT_normalized/image_9.nii.gz.
+2026-06-05 15:40:49,294 - INFO - main - Dice score: 0.843761682510376
+2026-06-05 15:40:49,304 - INFO - main - 9 has been saved. 
+2026-06-05 15:40:57,382 - INFO - main - Tested query volume: /sabs_CT_normalized/image_10.nii.gz.
+2026-06-05 15:40:57,382 - INFO - main - Dice score: 0.8644001483917236
+2026-06-05 15:40:57,391 - INFO - main - 10 has been saved. 
+2026-06-05 15:41:07,670 - INFO - main - Tested query volume: /sabs_CT_normalized/image_6.nii.gz.
+2026-06-05 15:41:07,671 - INFO - main - Dice score: 0.7975184321403503
+2026-06-05 15:41:07,681 - INFO - main - 6 has been saved. 
+2026-06-05 15:41:12,824 - INFO - main - Tested query volume: /sabs_CT_normalized/image_11.nii.gz.
+2026-06-05 15:41:12,824 - INFO - main - Dice score: 0.8925241231918335
+2026-06-05 15:41:12,830 - INFO - main - 11 has been saved. 
+2026-06-05 15:41:17,975 - INFO - main - Tested query volume: /sabs_CT_normalized/image_7.nii.gz.
+2026-06-05 15:41:17,976 - INFO - main - Dice score: 0.07624522596597672
+2026-06-05 15:41:17,982 - INFO - main - 7 has been saved. 
+2026-06-05 15:41:18,103 - INFO - main - Test Class: LK
+2026-06-05 15:41:18,103 - INFO - main - Mean class IoU: 0.6240127682685852
+2026-06-05 15:41:18,103 - INFO - main - Mean class Dice: 0.7213180661201477
+2026-06-05 15:41:18,103 - INFO - main - Test Class: LIVER
+2026-06-05 15:41:29,648 - INFO - main - Tested query volume: /sabs_CT_normalized/image_11.nii.gz.
+2026-06-05 15:41:29,649 - INFO - main - Dice score: 0.8888189792633057
+2026-06-05 15:41:29,661 - INFO - main - 11 has been saved. 
+2026-06-05 15:41:38,786 - INFO - main - Tested query volume: /sabs_CT_normalized/image_12.nii.gz.
+2026-06-05 15:41:38,786 - INFO - main - Dice score: 0.8374724388122559
+2026-06-05 15:41:38,800 - INFO - main - 12 has been saved. 
+2026-06-05 15:41:57,404 - INFO - main - Tested query volume: /sabs_CT_normalized/image_9.nii.gz.
+2026-06-05 15:41:57,404 - INFO - main - Dice score: 0.9073840975761414
+2026-06-05 15:41:57,428 - INFO - main - 9 has been saved. 
+2026-06-05 15:42:10,758 - INFO - main - Tested query volume: /sabs_CT_normalized/image_7.nii.gz.
+2026-06-05 15:42:10,759 - INFO - main - Dice score: 0.9243026375770569
+2026-06-05 15:42:10,776 - INFO - main - 7 has been saved. 
+2026-06-05 15:42:26,760 - INFO - main - Tested query volume: /sabs_CT_normalized/image_6.nii.gz.
+2026-06-05 15:42:26,760 - INFO - main - Dice score: 0.8407807946205139
+2026-06-05 15:42:26,784 - INFO - main - 6 has been saved. 
+2026-06-05 15:42:39,784 - INFO - main - Tested query volume: /sabs_CT_normalized/image_10.nii.gz.
+2026-06-05 15:42:39,784 - INFO - main - Dice score: 0.9010640978813171
+2026-06-05 15:42:39,801 - INFO - main - 10 has been saved. 
+2026-06-05 15:42:39,920 - INFO - main - Test Class: LIVER
+2026-06-05 15:42:39,920 - INFO - main - Mean class IoU: 0.7925410270690918
+2026-06-05 15:42:39,920 - INFO - main - Mean class Dice: 0.8833038210868835
+2026-06-05 15:42:39,920 - INFO - main - Final results...
+2026-06-05 15:42:39,920 - INFO - main - Mean IoU: {'SPLEEN': 0.5768385529518127, 'RK': 0.6619901657104492, 'LK': 0.6240127682685852, 'LIVER': 0.7925410270690918}
+2026-06-05 15:42:39,920 - INFO - main - Mean Dice: {'SPLEEN': 0.6916971802711487, 'RK': 0.7676947712898254, 'LK': 0.7213180661201477, 'LIVER': 0.8833038210868835}
+2026-06-05 15:42:39,921 - INFO - main - Whole mean Dice: 0.7660034596920013
+2026-06-05 15:42:39,921 - INFO - main - End of validation.

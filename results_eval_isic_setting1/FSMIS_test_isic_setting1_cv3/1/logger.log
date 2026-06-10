@@ -1,0 +1,15 @@
+2026-06-06 21:33:12,512 - INFO - main - Run "test_isic_setting1_cv3" with ID "1"
+2026-06-06 21:33:12,693 - INFO - main - Create model...
+2026-06-06 21:33:21,046 - INFO - main - Load data...
+2026-06-06 21:33:21,049 - INFO - main - ===== Evaluating Category melanoma =====
+2026-06-06 21:34:11,345 - INFO - main - Category melanoma Dice: 0.7234747409820557
+2026-06-06 21:34:11,345 - INFO - main - Category melanoma IoU: 0.6092191338539124
+2026-06-06 21:34:11,345 - INFO - main - ===== Evaluating Category nevus =====
+2026-06-06 21:35:57,265 - INFO - main - Category nevus Dice: 0.6182238459587097
+2026-06-06 21:35:57,265 - INFO - main - Category nevus IoU: 0.5151472687721252
+2026-06-06 21:35:57,265 - INFO - main - ===== Evaluating Category seborrheic_keratosis =====
+2026-06-06 21:36:08,984 - INFO - main - Category seborrheic_keratosis Dice: 0.5038548707962036
+2026-06-06 21:36:08,984 - INFO - main - Category seborrheic_keratosis IoU: 0.398381769657135
+2026-06-06 21:36:08,984 - INFO - main - ===== Mean Results =====
+2026-06-06 21:36:08,984 - INFO - main - Mean Dice: 0.6300593018531799
+2026-06-06 21:36:08,984 - INFO - main - Mean IoU: 0.5245486497879028
