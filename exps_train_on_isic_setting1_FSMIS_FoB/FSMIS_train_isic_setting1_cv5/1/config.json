@@ -1,0 +1,50 @@
+{
+  "__doc__": "Default configurations",
+  "batch_size": 1,
+  "bg_wt": 0.1,
+  "dataset": "isic",
+  "dataset_tag": "isic_setting1",
+  "eval_fold": 5,
+  "exclude_label": null,
+  "exp_str": "train_isic_setting1_cv5",
+  "gpu_id": 0,
+  "ignore_label": 255,
+  "isic_setting": 1,
+  "isic_setting_1_base_path": "data/isic/ISIC_setting_1",
+  "isic_setting_2_base_path": "data/isic/combine",
+  "lr_step_gamma": 0.98,
+  "max_iters_per_load": 3000,
+  "max_slices": 3,
+  "min_size": 200,
+  "mode": "train",
+  "n_part": 3,
+  "n_query": 1,
+  "n_shot": 1,
+  "n_steps": 39001,
+  "n_sv": 5000,
+  "n_way": 1,
+  "num_workers": 4,
+  "optim": {
+    "lr": 0.0001,
+    "momentum": 0.9,
+    "weight_decay": 5e-05
+  },
+  "optim_type": "sgd",
+  "path": {
+    "CHAOST2": {
+      "data_dir": "./data/CHAOST2"
+    },
+    "SABS": {
+      "data_dir": "./data/SABS"
+    },
+    "log_dir": "./exps_train_on_isic_setting1_FSMIS_FoB"
+  },
+  "print_interval": 100,
+  "reload_model_path": null,
+  "save_snapshot_every": 1000,
+  "seed": 2025,
+  "supp_idx": 0,
+  "t_loss_scaler": 0.0,
+  "test_label": null,
+  "use_gt": false
+}

@@ -1,0 +1,134 @@
+# ================================
+# Python / cache
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ================================
+# Virtual environments
+# ================================
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+
+# ================================
+# IDE / editor
+# ================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ================================
+# Jupyter / notebook checkpoints
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# Medical image data - do not upload
+# ================================
+*.dcm
+*.DCM
+*.nii
+*.nii.gz
+*.NII
+*.NII.GZ
+*.mha
+*.mhd
+*.nrrd
+*.nhdr
+
+# ================================
+# Image files - do not upload PNG
+# ================================
+*.png
+*.PNG
+
+# ================================
+# Dataset directories
+# ================================
+data/
+datasets/
+Dataset/
+Datasets/
+CHAOST2/
+SABS/
+ISIC/
+
+# ================================
+# Checkpoints / model weights
+# Do not upload anything inside checkpoints/
+# ================================
+checkpoints/**
+!checkpoints/.gitkeep
+
+*.pth
+*.pt
+*.ckpt
+*.pkl
+*.pickle
+*.onnx
+*.safetensors
+
+# ================================
+# Training outputs / experiment logs
+# ================================
+runs/
+logs/
+log/
+wandb/
+mlruns/
+outputs/
+output/
+results/
+result/
+snapshots/
+snapshot/
+experiments/
+exp/
+
+# ================================
+# Generated masks / predictions
+# ================================
+predictions/
+preds/
+masks/
+visualizations/
+vis/
+
+# ================================
+# Temporary files
+# ================================
+*.tmp
+*.temp
+*.bak
+*.old
+*.log
+
+# ================================
+# Package / build artifacts
+# ================================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ================================
+# Environment files
+# ================================
+.env
+.env.*
+!.env.example
+
+runs_janus/

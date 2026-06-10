@@ -1,0 +1,151 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/home/tong/code/medical/FoB_SAM-main",
+    "dependencies": [
+      "numpy==1.23.5",
+      "sacred==0.8.2",
+      "torch==2.11.0+cu128",
+      "yacs==0.1.8"
+    ],
+    "mainfile": "config.py",
+    "name": "FSMIS",
+    "repositories": [],
+    "sources": [
+      [
+        "SAM.py",
+        "_sources/SAM_647a94efcbcd2cc27f71317b9f94a08d.py"
+      ],
+      [
+        "config.py",
+        "_sources/config_a58066efbc72bf24e5b28efcda470dd4.py"
+      ],
+      [
+        "dataloaders/dataset_specifics.py",
+        "_sources/dataset_specifics_26688c270fc84352a674ab5a1d68700c.py"
+      ],
+      [
+        "dataloaders/datasets.py",
+        "_sources/datasets_197db96f88c0d0981b57fd4618666331.py"
+      ],
+      [
+        "dataloaders/image_transforms.py",
+        "_sources/image_transforms_09337365bb510290cc186c3fb744e613.py"
+      ],
+      [
+        "dataloaders/isic_setting_1.py",
+        "_sources/isic_setting_1_dbf41b7ca0563420455386691873f52b.py"
+      ],
+      [
+        "dataloaders/isic_setting_2.py",
+        "_sources/isic_setting_2_97812ecfd795878e0da51152ddcf963a.py"
+      ],
+      [
+        "dataloaders/niftiio.py",
+        "_sources/niftiio_25ba78e81fc4efb3c9e5310743f6d9ce.py"
+      ],
+      [
+        "dataloaders/transform.py",
+        "_sources/transform_9442ed0bee4c87102b26f7abb6f8e048.py"
+      ],
+      [
+        "models/FoB.py",
+        "_sources/FoB_118ab3ba49ebfbc94f32fd69c97f6641.py"
+      ],
+      [
+        "models/encoder.py",
+        "_sources/encoder_2feb06d1a20ed989a1afc4798ed2559b.py"
+      ],
+      [
+        "test.py",
+        "_sources/test_33095d77c15d0438ceb9866ca03430e5.py"
+      ],
+      [
+        "train.py",
+        "_sources/train_ab7fa4ea2a57db8c5822926e48619c69.py"
+      ],
+      [
+        "utils.py",
+        "_sources/utils_107949f2e263e528e6fd9ea483bba753.py"
+      ]
+    ]
+  },
+  "heartbeat": "2026-06-06T21:42:12.484546",
+  "host": {
+    "ENV": {},
+    "cpu": "AMD EPYC 7502 32-Core Processor",
+    "gpus": {
+      "driver_version": "570.172.08",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 5090",
+          "persistence_mode": true,
+          "total_memory": 32607
+        },
+        {
+          "model": "NVIDIA GeForce RTX 5090",
+          "persistence_mode": true,
+          "total_memory": 32607
+        }
+      ]
+    },
+    "hostname": "5af570157fc6",
+    "os": [
+      "Linux",
+      "Linux-6.8.0-106-generic-x86_64-with-glibc2.35"
+    ],
+    "python_version": "3.10.20"
+  },
+  "meta": {
+    "command": "main",
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "mode=test",
+        "gpu_id=0",
+        "dataset=isic",
+        "isic_setting=1",
+        "isic_setting_1_base_path=data/isic/ISIC_setting_1",
+        "num_workers=4",
+        "n_steps=39001",
+        "eval_fold=5",
+        "max_iters_per_load=3000",
+        "supp_idx=2",
+        "test_label=[]",
+        "seed=2025",
+        "n_part=3",
+        "reload_model_path=./exps_train_on_isic_setting1_FSMIS_FoB/FSMIS_train_isic_setting1_cv5/1/snapshots/26000.pth",
+        "save_snapshot_every=3000",
+        "lr_step_gamma=0.98",
+        "path.log_dir=./results_eval_isic_setting1"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": 1,
+  "start_time": "2026-06-06T21:39:14.167287",
+  "status": "COMPLETED",
+  "stop_time": "2026-06-06T21:42:12.484116"
+}
