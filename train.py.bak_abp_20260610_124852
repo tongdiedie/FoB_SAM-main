@@ -3,7 +3,6 @@
 For Evaluation
 Extended from ADNet code by Hansen et al.
 """
-import os
 import shutil
 
 import torch.backends.cudnn as cudnn
@@ -18,29 +17,6 @@ from utils import *
 from dataloaders.isic_setting_1 import get_superpix_isic_dataset
 from dataloaders.isic_setting_2 import DatasetISIC
 import torchvision.transforms as transforms
-
-def _abp_env_bool(name, default=False):
-    value = os.environ.get(name, None)
-    if value is None:
-        return default
-    return value.lower() in ["1", "true", "yes", "y", "on"]
-
-
-def get_abp_model_config():
-    return {
-        # Multi-ring BPPC
-        "use_multiring_bppc": _abp_env_bool("USE_MULTIRING_BPPC", True),
-        "bppc_ring_kernel_pairs": [(17, 11), (21, 15), (25, 19)],
-        "use_learnable_ring_fusion": _abp_env_bool("USE_LEARNABLE_RING_FUSION", True),
-
-        # Prompt Validity Filter, inference-only
-        "use_prompt_validity_filter": _abp_env_bool("USE_PROMPT_VALIDITY_FILTER", True),
-        "neg_fg_threshold": float(os.environ.get("NEG_FG_THRESHOLD", 0.85)),
-        "neg_min_dist": float(os.environ.get("NEG_MIN_DIST", 5.0)),
-        "neg_topk": int(os.environ.get("NEG_TOPK", 256)),
-        "neg_min_keep": int(os.environ.get("NEG_MIN_KEEP", 6)),
-    }
-
 
 
 
@@ -84,8 +60,8 @@ def main(_run, _config, _log):
     torch.set_num_threads(1)
 
     _log.info(f'Create model...')
-    model_config = get_abp_model_config()
-    _log.info(f"ABP model config: {model_config}")
+    model_config = {
+    }
     model = FewShotSeg(model_config)
     model = model.cuda()
     model.train()

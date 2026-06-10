@@ -282,8 +282,6 @@ class FewShotSeg(nn.Module):
 
     def __init__(self, args):
         super().__init__()
-        if args is None:
-            args = {}
 
 
         self.encoder = Res101Encoder(replace_stride_with_dilation=[True, True, False],
@@ -295,35 +293,6 @@ class FewShotSeg(nn.Module):
         self.scaler = 20.0
         self.num_points = 10
         self.feature_dim = 512
-
-        # ===== ABP: Adaptive Background Prompting configs =====
-        self.use_multiring_bppc = bool(args.get("use_multiring_bppc", True))
-        self.bppc_ring_kernel_pairs = [
-            tuple(pair) for pair in args.get(
-                "bppc_ring_kernel_pairs",
-                [(17, 11), (21, 15), (25, 19)]
-            )
-        ]
-        self.use_learnable_ring_fusion = bool(args.get("use_learnable_ring_fusion", True))
-        if self.use_learnable_ring_fusion:
-            self.ring_logits = nn.Parameter(torch.zeros(len(self.bppc_ring_kernel_pairs)))
-        else:
-            self.register_buffer(
-                "ring_logits",
-                torch.zeros(len(self.bppc_ring_kernel_pairs)),
-                persistent=False
-            )
-
-        # Prompt Validity Filter is inference-only.
-        self.use_prompt_validity_filter = bool(args.get("use_prompt_validity_filter", True))
-        self.neg_fg_threshold = float(args.get("neg_fg_threshold", 0.85))
-        self.neg_min_dist = float(args.get("neg_min_dist", 5.0))
-        self.neg_topk = int(args.get("neg_topk", 256))
-        self.neg_min_keep = int(args.get("neg_min_keep", 6))
-
-        # Default single-ring setting, kept compatible with original FoB.
-        self.default_outer_kernel_size = int(args.get("default_outer_kernel_size", 21))
-        self.default_inner_kernel_size = int(args.get("default_inner_kernel_size", 15))
         self.pre_process = transforms.Compose([
             transforms.Resize((256, 256)),
         ])
@@ -390,27 +359,15 @@ class FewShotSeg(nn.Module):
         if supp_mask[[0], 0, 0].max() > 0. and qry_labels.max() > 0.:
 
             # ***************************** Background Prompt Prototype Construction ********************************
-            if self.use_multiring_bppc:
-                skps, points_spt = self.build_multiring_background_prototypes(
-                    supp_fts_one=supp_fts[0][0],
-                    supp_mask_one=supp_mask[0],
-                    img_size=img_size
-                )
-            else:
-                points_spt = self.uniform_sample_contour(
-                    supp_mask[0],
-                    num_keypoints=self.num_points,
-                    outer_kernel_size=self.default_outer_kernel_size,
-                    inner_kernel_size=self.default_inner_kernel_size
-                )  # [10, 2]
-                heatmaps_spt = self.generate_keypoint_heatmaps(img_size, points_spt)
-                heatmaps_spt = torch.from_numpy(heatmaps_spt).float().cuda()
-                skps = []
-                for i in range(self.num_points):
-                    skp = [[self.getFeatures(supp_fts[0][0], heatmaps_spt[i])]]
-                    skp = self.getPrototype(skp)[0].transpose(0, 1)
-                    skps.append(skp)
-                skps = torch.stack(skps).squeeze(2)  # [10, 512]
+            points_spt = self.uniform_sample_contour(supp_mask[0], num_keypoints=self.num_points) # [10,2]
+            heatmaps_spt = self.generate_keypoint_heatmaps(img_size, points_spt) #(10, 256, 256)
+            heatmaps_spt = torch.from_numpy(heatmaps_spt).cuda()
+            skps = []
+            for i in range(self.num_points):
+                skp = [[self.getFeatures(supp_fts[0][0], heatmaps_spt[i])]] #[1, 512]
+                skp = self.getPrototype(skp)[0].transpose(0, 1)  # [512, 1]
+                skps.append(skp)
+            skps = torch.stack(skps).squeeze(2) # [10, 512]
 
             # ***************************** Background-centric Context Modeling *****************************
             spt_fts_ = [[self.getFeatures(supp_fts[[[0], way, shot]], supp_mask[[0], way, shot])
@@ -466,24 +423,9 @@ class FewShotSeg(nn.Module):
 
             # only test ****************************************
             if not train:
-                pos_point = self.uniform_sample_from_prob(
-                    qry_pred_coarse[0][0],
-                    num_samples=10,
-                    threshold=0.96
-                )
-
-                if self.use_prompt_validity_filter:
-                    pred_point = self.filter_background_prompts(
-                        pred_point=pred_point,
-                        heatmap=heatmap.detach(),
-                        fg_prob=qry_pred_coarse[0][0].detach(),
-                        fg_threshold=self.neg_fg_threshold,
-                        min_dist=self.neg_min_dist,
-                        topk=self.neg_topk,
-                        min_keep=self.neg_min_keep
-                    )
-
+                pos_point = self.uniform_sample_from_prob(qry_pred_coarse[0][0], num_samples=10,threshold=0.96)  
                 neg_point = np.array([pred_point])
+
                 return neg_point, pos_point
 
         return heatmap_loss * 1000 + L2_loss / 10000, rac_loss, foreground_loss
@@ -539,182 +481,6 @@ class FewShotSeg(nn.Module):
         return fg_prototypes
 
     
-
-    # ========================= ABP helpers: Multi-ring BPPC =========================
-
-    def _get_ring_weights(self, device):
-        """Return normalized fusion weights for multi-ring BPPC."""
-        logits = self.ring_logits.to(device)
-        if self.use_learnable_ring_fusion:
-            return torch.softmax(logits, dim=0)
-        return torch.ones_like(logits, device=device) / max(1, logits.numel())
-
-    def build_multiring_background_prototypes(self, supp_fts_one, supp_mask_one, img_size):
-        """
-        Multi-ring BPPC.
-
-        Original FoB samples support background prompts from a single ring.
-        This version samples multiple rings and fuses their prompt prototypes.
-        Output prompt number is still self.num_points, so Head/MaskedAttention
-        stay compatible with the original FoB implementation.
-        """
-        device = supp_fts_one.device
-        ring_skps = []
-        ref_points = None
-        ref_idx = len(self.bppc_ring_kernel_pairs) // 2
-
-        for ring_idx, kernel_pair in enumerate(self.bppc_ring_kernel_pairs):
-            outer_kernel, inner_kernel = int(kernel_pair[0]), int(kernel_pair[1])
-
-            points = self.uniform_sample_contour(
-                supp_mask_one,
-                num_keypoints=self.num_points,
-                outer_kernel_size=outer_kernel,
-                inner_kernel_size=inner_kernel
-            )
-
-            if ring_idx == ref_idx:
-                ref_points = points
-
-            heatmaps = self.generate_keypoint_heatmaps(img_size, points)
-            heatmaps = torch.from_numpy(heatmaps).float().to(device)
-
-            skps_this_ring = []
-            for i in range(self.num_points):
-                skp = [[self.getFeatures(supp_fts_one, heatmaps[i])]]
-                skp = self.getPrototype(skp)[0].transpose(0, 1)
-                skps_this_ring.append(skp)
-
-            skps_this_ring = torch.stack(skps_this_ring).squeeze(2)  # [K, C]
-            ring_skps.append(skps_this_ring)
-
-        ring_skps = torch.stack(ring_skps, dim=0)  # [R, K, C]
-        ring_weights = self._get_ring_weights(device).view(-1, 1, 1)
-        skps = torch.sum(ring_skps * ring_weights, dim=0)  # [K, C]
-
-        return skps, ref_points
-
-    # ====================== ABP helpers: Prompt Validity Filter ======================
-
-    def _clip_point(self, point, width, height):
-        x = int(round(float(point[0])))
-        y = int(round(float(point[1])))
-        x = int(np.clip(x, 0, width - 1))
-        y = int(np.clip(y, 0, height - 1))
-        return np.array([x, y], dtype=np.int32)
-
-    def _is_valid_negative_point(self, point, fg_prob_np, kept_points, fg_threshold, min_dist):
-        """
-        A negative prompt is invalid if:
-        1. it falls into a high-confidence foreground region;
-        2. it is too close to already selected negative prompts.
-        """
-        x, y = int(point[0]), int(point[1])
-
-        if fg_prob_np[y, x] >= fg_threshold:
-            return False
-
-        for kept in kept_points:
-            if np.linalg.norm(point.astype(np.float32) - kept.astype(np.float32)) < min_dist:
-                return False
-
-        return True
-
-    def _pick_replacement_from_heatmap(self, heatmap_np, fg_prob_np, kept_points,
-                                       fg_threshold, min_dist, topk):
-        """Pick the highest-response valid location from a heatmap channel."""
-        height, width = fg_prob_np.shape
-        flat = heatmap_np.reshape(-1)
-        topk = int(min(max(1, topk), flat.size))
-
-        candidate_idx = np.argpartition(-flat, topk - 1)[:topk]
-        candidate_idx = candidate_idx[np.argsort(-flat[candidate_idx])]
-
-        for idx in candidate_idx:
-            y = int(idx // width)
-            x = int(idx % width)
-            point = np.array([x, y], dtype=np.int32)
-
-            if self._is_valid_negative_point(
-                point,
-                fg_prob_np,
-                kept_points,
-                fg_threshold,
-                min_dist
-            ):
-                return point
-
-        return None
-
-    def filter_background_prompts(self, pred_point, heatmap, fg_prob,
-                                  fg_threshold=0.85, min_dist=5.0,
-                                  topk=256, min_keep=6):
-        """
-        Prompt Validity Filter.
-
-        It corrects unreliable background prompts at inference time.
-        If a predicted background point falls into high foreground probability
-        or collapses into a cluster, replace it by a valid high-response point
-        from the corresponding background heatmap channel.
-        """
-        if isinstance(heatmap, torch.Tensor):
-            heatmap_np = heatmap.detach().cpu().float().numpy()
-        else:
-            heatmap_np = heatmap
-
-        if heatmap_np.ndim == 4:
-            heatmap_np = heatmap_np[0]
-
-        if isinstance(fg_prob, torch.Tensor):
-            fg_prob_np = fg_prob.detach().cpu().float().numpy()
-        else:
-            fg_prob_np = fg_prob
-
-        if fg_prob_np.ndim == 3:
-            fg_prob_np = fg_prob_np[0]
-
-        height, width = fg_prob_np.shape
-        pred_point = np.asarray(pred_point, dtype=np.float32)
-
-        kept_points = []
-        fallback_points = []
-
-        for i, point in enumerate(pred_point):
-            point = self._clip_point(point, width, height)
-
-            if self._is_valid_negative_point(
-                point,
-                fg_prob_np,
-                kept_points,
-                fg_threshold,
-                min_dist
-            ):
-                kept_points.append(point)
-                continue
-
-            heat_ch = min(i, heatmap_np.shape[0] - 1)
-            replacement = self._pick_replacement_from_heatmap(
-                heatmap_np[heat_ch],
-                fg_prob_np,
-                kept_points,
-                fg_threshold,
-                min_dist,
-                topk
-            )
-
-            if replacement is not None:
-                kept_points.append(replacement)
-            else:
-                fallback_points.append(point)
-
-        while len(kept_points) < min_keep and len(fallback_points) > 0:
-            kept_points.append(fallback_points.pop(0))
-
-        if len(kept_points) == 0:
-            kept_points = [self._clip_point(pred_point[0], width, height)]
-
-        return np.asarray(kept_points, dtype=np.int32)
-
     def uniform_sample_from_prob(self, pred_map, num_samples=10, threshold=0.96):
         """
         Uniformly samples points from a probability map based on a given threshold.
@@ -756,71 +522,59 @@ class FewShotSeg(nn.Module):
     def erode_label(self, label, kernel_size=9):
         label_erode = F.max_pool2d(1 - label, kernel_size=kernel_size, stride=1, padding=kernel_size//2)
         return 1 - label_erode
-    def get_ring(self, label, kernel_size=21, inner_kernel_size=15):
-        outer = self.dilate_label(label, kernel_size)
-        inner = self.dilate_label(label, inner_kernel_size)
-        ring = torch.clamp(outer - inner, min=0.0, max=1.0)
-        return ring
+    def get_ring(self, label, kernel_size=9):
 
+        label_dilate_9 = self.dilate_label(label, kernel_size)
+        label_dilate_5 = self.dilate_label(label, 15)
+        ring = label_dilate_9 - label_dilate_5
+        return ring
     def get_ring_inner(self, label, kernel_size=9):
         label_erode_9 = self.erode_label(label, kernel_size)
         ring = label - label_erode_9
         return ring
 
-    def uniform_sample_contour(self, mask, num_keypoints=10,
-                               outer_kernel_size=None, inner_kernel_size=None):
+    def uniform_sample_contour(self, mask, num_keypoints=10):
         """
-        Uniformly sample points along a background ring contour.
-
-        Args:
-            mask: binary mask tensor.
-            num_keypoints: number of sampled prompts.
-            outer_kernel_size: outer dilation kernel.
-            inner_kernel_size: inner dilation kernel.
+        Uniformly samples points along the contour of a binary mask.
+        Robust version: handles empty, tiny, single-point, or zero-length contours.
         """
-        if outer_kernel_size is None:
-            outer_kernel_size = self.default_outer_kernel_size
-        if inner_kernel_size is None:
-            inner_kernel_size = self.default_inner_kernel_size
 
         raw_mask = mask.squeeze().detach().cpu().numpy()
         raw_mask = (raw_mask > 0).astype(np.uint8)
 
         def fallback_points(binary_mask):
             ys, xs = np.where(binary_mask > 0)
-            if len(xs) == 0:
-                return np.zeros((num_keypoints, 2), dtype=np.int32)
 
-            coords = np.stack([xs, ys], axis=1).astype(np.float32)
+            if len(xs) == 0:
+                return np.zeros((num_keypoints, 2), dtype=int)
+
+            coords = np.stack([xs, ys], axis=1).astype(np.float32)  # [x, y]
+
             if coords.shape[0] == 1:
-                return np.repeat(coords, num_keypoints, axis=0).astype(np.int32)
+                return np.repeat(coords, num_keypoints, axis=0).astype(int)
 
             idxs = np.linspace(0, coords.shape[0] - 1, num_keypoints).astype(int)
-            return np.round(coords[idxs]).astype(np.int32)
+            return np.round(coords[idxs]).astype(int)
 
-        ring = self.get_ring(
-            mask,
-            kernel_size=outer_kernel_size,
-            inner_kernel_size=inner_kernel_size
-        )
+        ring = self.get_ring(mask, kernel_size=21)
         ring = ring.squeeze().detach().cpu().numpy()
         ring = (ring > 0).astype(np.uint8)
-
-        height, width = ring.shape
 
         contours, _ = cv2.findContours(ring, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         if len(contours) == 0:
             contours, _ = cv2.findContours(raw_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-            if len(contours) == 0:
-                return fallback_points(raw_mask)
+
+        if len(contours) == 0:
+            return fallback_points(raw_mask)
 
         contour = max(contours, key=cv2.contourArea)
-        pts = contour[:, 0, :].astype(np.float32)
+        pts = contour[:, 0, :].astype(np.float32)  # [N, 2], x-y order
 
         if pts.shape[0] < 2:
             return fallback_points(raw_mask if raw_mask.max() > 0 else ring)
 
+        # Remove consecutive duplicate points.
         clean_pts = [pts[0]]
         for pt in pts[1:]:
             if np.linalg.norm(pt - clean_pts[-1]) > 1e-6:
@@ -831,6 +585,7 @@ class FewShotSeg(nn.Module):
         if pts.shape[0] < 2:
             return fallback_points(raw_mask if raw_mask.max() > 0 else ring)
 
+        # Close contour.
         closed_pts = np.vstack([pts, pts[0]])
         seg_lens = np.linalg.norm(np.diff(closed_pts, axis=0), axis=1)
         total_len = float(seg_lens.sum())
@@ -852,10 +607,7 @@ class FewShotSeg(nn.Module):
                 ratio = (d - cumulative[idx]) / seg_lens[idx]
                 sampled_points.append(closed_pts[idx] + ratio * (closed_pts[idx + 1] - closed_pts[idx]))
 
-        sampled_points = np.round(np.asarray(sampled_points)).astype(np.int32)
-        sampled_points[:, 0] = np.clip(sampled_points[:, 0], 0, width - 1)
-        sampled_points[:, 1] = np.clip(sampled_points[:, 1], 0, height - 1)
-
+        sampled_points = np.round(np.asarray(sampled_points)).astype(int)
         return sampled_points
 
     def sort_keypoints_clockwise(self, points):
