@@ -30,7 +30,7 @@ def get_abp_model_config():
     return {
         # Multi-ring BPPC
         "use_multiring_bppc": _abp_env_bool("USE_MULTIRING_BPPC", True),
-        "bppc_ring_kernel_pairs": [(17, 11), (21, 15), (25, 19)],
+        "bppc_ring_kernel_pairs": [(19, 13), (21, 15), (25, 17)],
         "use_learnable_ring_fusion": _abp_env_bool("USE_LEARNABLE_RING_FUSION", True),
 
         # Prompt Validity Filter, inference-only

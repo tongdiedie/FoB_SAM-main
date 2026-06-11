@@ -1,0 +1,60 @@
+{
+  "__doc__": "Default configurations",
+  "batch_size": 1,
+  "bg_wt": 0.1,
+  "dataset": "SABS",
+  "dataset_tag": "SABS",
+  "eval_fold": 1,
+  "exclude_label": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "exp_str": "test_SABS_cv1",
+  "gpu_id": 0,
+  "ignore_label": 255,
+  "isic_setting": 2,
+  "isic_setting_1_base_path": "data/ISIC_setting_1",
+  "isic_setting_2_base_path": "data/isic/combine",
+  "lr_step_gamma": 0.98,
+  "max_iters_per_load": 3000,
+  "max_slices": 3,
+  "min_size": 200,
+  "mode": "test",
+  "n_part": 3,
+  "n_query": 1,
+  "n_shot": 1,
+  "n_steps": 39001,
+  "n_sv": 5000,
+  "n_way": 1,
+  "num_workers": 16,
+  "optim": {
+    "lr": 0.0001,
+    "momentum": 0.9,
+    "weight_decay": 5e-05
+  },
+  "optim_type": "sgd",
+  "path": {
+    "CHAOST2": {
+      "data_dir": "./data/CHAOST2"
+    },
+    "SABS": {
+      "data_dir": "./data/SABS"
+    },
+    "log_dir": "./results_SABS_MR_ONLY"
+  },
+  "print_interval": 100,
+  "reload_model_path": "./exps_train_on_SABS_ABP_FULL/FSMIS_train_SABS_cv1/1/snapshots/39000.pth",
+  "save_snapshot_every": 3000,
+  "seed": 2025,
+  "supp_idx": 2,
+  "t_loss_scaler": 0.0,
+  "test_label": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "use_gt": false
+}

@@ -1,0 +1,449 @@
+2026-06-10 13:15:28,894 - INFO - main - Run "train_SABS_cv0" with ID "1"
+2026-06-10 13:15:29,085 - INFO - main - Create model...
+2026-06-10 13:15:29,085 - INFO - main - ABP model config: {'use_multiring_bppc': True, 'bppc_ring_kernel_pairs': [(17, 11), (21, 15), (25, 19)], 'use_learnable_ring_fusion': True, 'use_prompt_validity_filter': True, 'neg_fg_threshold': 0.85, 'neg_min_dist': 5.0, 'neg_topk': 256, 'neg_min_keep': 6}
+2026-06-10 13:15:30,169 - INFO - main - Set optimizer...
+2026-06-10 13:15:30,170 - INFO - main - Load data...
+2026-06-10 13:15:38,379 - INFO - main - Start training...
+2026-06-10 13:15:38,380 - INFO - main - This is epoch "0" of "13" epochs.
+2026-06-10 13:16:14,134 - INFO - main - step 100: total_loss: 359.97577865600584, prompt_loss: [357.8828], contrastive_loss: 1.3176971828937531
+2026-06-10 13:16:26,758 - INFO - main - step 200: total_loss: 10.532490072250367, prompt_loss: 8.695910830497741, contrastive_loss: 1.3978971982002257
+2026-06-10 13:16:39,570 - INFO - main - step 300: total_loss: 5.392927949428558, prompt_loss: 3.611036148071289, contrastive_loss: 1.406219744682312
+2026-06-10 13:16:51,893 - INFO - main - step 400: total_loss: 4.592368295192719, prompt_loss: 2.735144548416138, contrastive_loss: 1.4133351719379426
+2026-06-10 13:17:04,286 - INFO - main - step 500: total_loss: 4.003961980342865, prompt_loss: 2.186676551103592, contrastive_loss: 1.4152041912078857
+2026-06-10 13:17:17,014 - INFO - main - step 600: total_loss: 3.629795644283295, prompt_loss: 1.813070833683014, contrastive_loss: 1.4220272207260132
+2026-06-10 13:17:29,697 - INFO - main - step 700: total_loss: 3.4462444806098937, prompt_loss: [1.6164839], contrastive_loss: 1.407487006187439
+2026-06-10 13:17:42,158 - INFO - main - step 800: total_loss: 3.520387518405914, prompt_loss: 1.6985930228233337, contrastive_loss: 1.4161046254634857
+2026-06-10 13:17:54,524 - INFO - main - step 900: total_loss: 3.2802951884269715, prompt_loss: 1.4624455618858336, contrastive_loss: 1.418330647945404
+2026-06-10 13:18:06,903 - INFO - main - step 1000: total_loss: 3.408945713043213, prompt_loss: 1.6044627296924592, contrastive_loss: 1.411358276605606
+2026-06-10 13:18:06,903 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:18:19,877 - INFO - main - step 1100: total_loss: 3.328367922306061, prompt_loss: 1.5409100091457366, contrastive_loss: 1.4046603333950043
+2026-06-10 13:18:32,151 - INFO - main - step 1200: total_loss: 3.2592174792289734, prompt_loss: 1.501916254758835, contrastive_loss: 1.3934287106990815
+2026-06-10 13:18:44,637 - INFO - main - step 1300: total_loss: 3.267391815185547, prompt_loss: 1.560541762113571, contrastive_loss: 1.3661065471172333
+2026-06-10 13:18:57,330 - INFO - main - step 1400: total_loss: 3.3063434410095214, prompt_loss: 1.63476287484169, contrastive_loss: 1.329215179681778
+2026-06-10 13:19:10,254 - INFO - main - step 1500: total_loss: 3.1062237429618835, prompt_loss: 1.5093419337272644, contrastive_loss: 1.289148473739624
+2026-06-10 13:19:23,052 - INFO - main - step 1600: total_loss: 2.9718811774253844, prompt_loss: 1.4303190517425537, contrastive_loss: 1.2588372188806534
+2026-06-10 13:19:35,793 - INFO - main - step 1700: total_loss: 3.0494352269172667, prompt_loss: 1.5367479825019836, contrastive_loss: 1.2218243116140366
+2026-06-10 13:19:48,886 - INFO - main - step 1800: total_loss: 3.015366380214691, prompt_loss: 1.5840169155597688, contrastive_loss: 1.173598644733429
+2026-06-10 13:20:01,980 - INFO - main - step 1900: total_loss: 2.884803600311279, prompt_loss: 1.5171503627300262, contrastive_loss: 1.0926110988855362
+2026-06-10 13:20:14,992 - INFO - main - step 2000: total_loss: 2.7883076763153074, prompt_loss: 1.5003047037124633, contrastive_loss: 1.0468682205677033
+2026-06-10 13:20:14,993 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:20:28,131 - INFO - main - step 2100: total_loss: 2.79017151594162, prompt_loss: 1.5484701073169709, contrastive_loss: 0.9962068945169449
+2026-06-10 13:20:41,138 - INFO - main - step 2200: total_loss: 2.8384966218471526, prompt_loss: [1.5602717], contrastive_loss: 0.9913077425956726
+2026-06-10 13:20:53,927 - INFO - main - step 2300: total_loss: 2.7603568172454835, prompt_loss: 1.5939256572723388, contrastive_loss: 0.9176815876364708
+2026-06-10 13:21:06,819 - INFO - main - step 2400: total_loss: 2.7017045497894285, prompt_loss: 1.57755988240242, contrastive_loss: 0.8550273121893406
+2026-06-10 13:21:19,493 - INFO - main - step 2500: total_loss: 2.4266534447669983, prompt_loss: [1.4350059], contrastive_loss: 0.7625589835643768
+2026-06-10 13:21:32,247 - INFO - main - step 2600: total_loss: 2.5643222630023956, prompt_loss: 1.58285342335701, contrastive_loss: 0.7282452070713044
+2026-06-10 13:21:44,892 - INFO - main - step 2700: total_loss: 2.550975412130356, prompt_loss: 1.6189830338954925, contrastive_loss: 0.6982932418584824
+2026-06-10 13:21:57,580 - INFO - main - step 2800: total_loss: 2.4342738246917723, prompt_loss: 1.552166495323181, contrastive_loss: 0.6193886526674032
+2026-06-10 13:22:10,227 - INFO - main - step 2900: total_loss: 2.443841111660004, prompt_loss: 1.6032579052448273, contrastive_loss: 0.5818324737250805
+2026-06-10 13:22:22,718 - INFO - main - step 3000: total_loss: 2.3543817925453188, prompt_loss: 1.543998556137085, contrastive_loss: 0.555861490033567
+2026-06-10 13:22:22,719 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:22:23,184 - INFO - main - This is epoch "1" of "13" epochs.
+2026-06-10 13:22:39,286 - INFO - main - step 3100: total_loss: 2.2900301313400266, prompt_loss: 1.5488661170005797, contrastive_loss: 0.5121470898389816
+2026-06-10 13:22:52,172 - INFO - main - step 3200: total_loss: 2.175575933456421, prompt_loss: 1.5014470267295836, contrastive_loss: 0.4548014611005783
+2026-06-10 13:23:05,377 - INFO - main - step 3300: total_loss: 2.2078517377376556, prompt_loss: 1.4954930114746094, contrastive_loss: 0.48256788413971663
+2026-06-10 13:23:18,451 - INFO - main - step 3400: total_loss: 2.1890348744392396, prompt_loss: 1.463109273314476, contrastive_loss: 0.4636754694953561
+2026-06-10 13:23:31,839 - INFO - main - step 3500: total_loss: 2.261500270366669, prompt_loss: 1.5674869894981385, contrastive_loss: 0.47974553212523463
+2026-06-10 13:23:45,033 - INFO - main - step 3600: total_loss: 2.164214905500412, prompt_loss: [1.4943236], contrastive_loss: 0.41981763575226066
+2026-06-10 13:23:58,075 - INFO - main - step 3700: total_loss: 2.189793839454651, prompt_loss: 1.5225834894180297, contrastive_loss: 0.4404052471369505
+2026-06-10 13:24:11,114 - INFO - main - step 3800: total_loss: 2.1218346333503724, prompt_loss: 1.4729250824451448, contrastive_loss: 0.41500171832740307
+2026-06-10 13:24:23,759 - INFO - main - step 3900: total_loss: 2.153722964525223, prompt_loss: 1.5156465911865233, contrastive_loss: 0.41383705507963897
+2026-06-10 13:24:36,686 - INFO - main - step 4000: total_loss: 2.189619573354721, prompt_loss: 1.5436431986093522, contrastive_loss: 0.39901223763823507
+2026-06-10 13:24:36,686 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:24:50,019 - INFO - main - step 4100: total_loss: 2.129882560968399, prompt_loss: 1.510647161602974, contrastive_loss: 0.37966922648251056
+2026-06-10 13:25:02,813 - INFO - main - step 4200: total_loss: 2.161239800453186, prompt_loss: 1.5241362702846528, contrastive_loss: 0.3918149229511619
+2026-06-10 13:25:15,968 - INFO - main - step 4300: total_loss: 2.075640089511871, prompt_loss: 1.4724388217926025, contrastive_loss: 0.3862854892015457
+2026-06-10 13:25:28,703 - INFO - main - step 4400: total_loss: 2.0787251663208006, prompt_loss: 1.4417693102359772, contrastive_loss: 0.3883722072094679
+2026-06-10 13:25:41,639 - INFO - main - step 4500: total_loss: 2.0668194341659545, prompt_loss: 1.4779135662317275, contrastive_loss: 0.36852432958781717
+2026-06-10 13:25:54,939 - INFO - main - step 4600: total_loss: 2.0538950073719024, prompt_loss: 1.4670662558078766, contrastive_loss: 0.3580507406592369
+2026-06-10 13:26:08,143 - INFO - main - step 4700: total_loss: 2.0792740666866303, prompt_loss: 1.4992360609769821, contrastive_loss: 0.35817179856821896
+2026-06-10 13:26:20,996 - INFO - main - step 4800: total_loss: 2.1292660856246948, prompt_loss: 1.5602581465244294, contrastive_loss: 0.3604337253421545
+2026-06-10 13:26:33,993 - INFO - main - step 4900: total_loss: 2.105979291200638, prompt_loss: 1.5226092994213105, contrastive_loss: 0.37526353269815443
+2026-06-10 13:26:47,002 - INFO - main - step 5000: total_loss: 2.0166899037361143, prompt_loss: 1.4377718842029572, contrastive_loss: 0.36659797709435227
+2026-06-10 13:26:47,003 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:27:00,164 - INFO - main - step 5100: total_loss: 1.94003998875618, prompt_loss: 1.3813354563713074, contrastive_loss: 0.35933125600218774
+2026-06-10 13:27:12,970 - INFO - main - step 5200: total_loss: 2.071741677522659, prompt_loss: 1.4594513297080993, contrastive_loss: 0.3794871825352311
+2026-06-10 13:27:25,964 - INFO - main - step 5300: total_loss: 2.0303560769557953, prompt_loss: 1.4755420362949372, contrastive_loss: 0.3367954962793738
+2026-06-10 13:27:39,339 - INFO - main - step 5400: total_loss: 2.0542618107795714, prompt_loss: 1.5026248216629028, contrastive_loss: 0.35407854191958904
+2026-06-10 13:27:51,966 - INFO - main - step 5500: total_loss: 1.9864558708667754, prompt_loss: [1.4489244], contrastive_loss: 0.3190838910639286
+2026-06-10 13:28:04,970 - INFO - main - step 5600: total_loss: 2.011951289176941, prompt_loss: 1.5107412123680115, contrastive_loss: 0.29458902437239887
+2026-06-10 13:28:18,097 - INFO - main - step 5700: total_loss: 2.0596331083774566, prompt_loss: 1.518998995423317, contrastive_loss: 0.32454804657027125
+2026-06-10 13:28:31,222 - INFO - main - step 5800: total_loss: 1.9960421311855316, prompt_loss: 1.4666368663311005, contrastive_loss: 0.3341882522031665
+2026-06-10 13:28:44,283 - INFO - main - step 5900: total_loss: 1.911257847547531, prompt_loss: 1.4069289988279343, contrastive_loss: 0.31491474916227163
+2026-06-10 13:28:56,908 - INFO - main - step 6000: total_loss: 1.996014940738678, prompt_loss: 1.425798311829567, contrastive_loss: 0.3517117081210017
+2026-06-10 13:28:56,908 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:28:57,383 - INFO - main - This is epoch "2" of "13" epochs.
+2026-06-10 13:29:13,255 - INFO - main - step 6100: total_loss: 2.0204934883117676, prompt_loss: [1.4746132], contrastive_loss: 0.3450564768258482
+2026-06-10 13:29:25,472 - INFO - main - step 6200: total_loss: 2.017202693223953, prompt_loss: 1.4909715247154236, contrastive_loss: 0.32951463910751044
+2026-06-10 13:29:38,125 - INFO - main - step 6300: total_loss: 1.954010751247406, prompt_loss: 1.4280747044086457, contrastive_loss: 0.3149594223499298
+2026-06-10 13:29:51,147 - INFO - main - step 6400: total_loss: 1.992421716451645, prompt_loss: 1.4477089464664459, contrastive_loss: 0.33201398245990277
+2026-06-10 13:30:03,539 - INFO - main - step 6500: total_loss: 2.0417428004741667, prompt_loss: 1.5236019504070282, contrastive_loss: 0.3267619675211608
+2026-06-10 13:30:16,657 - INFO - main - step 6600: total_loss: 1.8736127150058746, prompt_loss: 1.374598158597946, contrastive_loss: 0.30516334250569344
+2026-06-10 13:30:29,618 - INFO - main - step 6700: total_loss: 1.9090653467178345, prompt_loss: 1.3930906653404236, contrastive_loss: 0.3089139540866017
+2026-06-10 13:30:42,763 - INFO - main - step 6800: total_loss: 2.007773255109787, prompt_loss: 1.4517170155048371, contrastive_loss: 0.3439807615429163
+2026-06-10 13:30:55,217 - INFO - main - step 6900: total_loss: 1.890196874141693, prompt_loss: 1.3663674199581146, contrastive_loss: 0.3496056149341166
+2026-06-10 13:31:07,958 - INFO - main - step 7000: total_loss: 1.9572369289398193, prompt_loss: 1.454313684105873, contrastive_loss: 0.30447735702618955
+2026-06-10 13:31:07,958 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:31:21,024 - INFO - main - step 7100: total_loss: 1.8911975932121277, prompt_loss: 1.4262753319740296, contrastive_loss: 0.2779002700187266
+2026-06-10 13:31:33,931 - INFO - main - step 7200: total_loss: 1.9097834825515747, prompt_loss: 1.398820189833641, contrastive_loss: 0.2948984296619892
+2026-06-10 13:31:46,598 - INFO - main - step 7300: total_loss: 1.9484423577785492, prompt_loss: 1.4589788734912872, contrastive_loss: 0.30475922115147114
+2026-06-10 13:31:59,206 - INFO - main - step 7400: total_loss: 1.8551309549808501, prompt_loss: 1.393134717941284, contrastive_loss: 0.28936415567994117
+2026-06-10 13:32:11,766 - INFO - main - step 7500: total_loss: 1.9715388369560243, prompt_loss: 1.4893611943721772, contrastive_loss: 0.29787184465676547
+2026-06-10 13:32:24,575 - INFO - main - step 7600: total_loss: 1.934166760444641, prompt_loss: 1.4581966769695283, contrastive_loss: 0.2923491870332509
+2026-06-10 13:32:37,391 - INFO - main - step 7700: total_loss: 1.9161369717121124, prompt_loss: 1.4203389185667037, contrastive_loss: 0.2939550367370248
+2026-06-10 13:32:50,007 - INFO - main - step 7800: total_loss: 2.012797154188156, prompt_loss: 1.5408804523944855, contrastive_loss: 0.29104245016351343
+2026-06-10 13:33:02,599 - INFO - main - step 7900: total_loss: 1.9394608783721923, prompt_loss: 1.4404069578647614, contrastive_loss: 0.28743436246179044
+2026-06-10 13:33:15,445 - INFO - main - step 8000: total_loss: 1.9277151346206665, prompt_loss: 1.4148252648115158, contrastive_loss: 0.3225238567963242
+2026-06-10 13:33:15,445 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:33:28,544 - INFO - main - step 8100: total_loss: 1.8428242743015288, prompt_loss: [1.3286816], contrastive_loss: 0.33307787431403996
+2026-06-10 13:33:41,065 - INFO - main - step 8200: total_loss: 1.9453179728984833, prompt_loss: [1.4703406], contrastive_loss: 0.29309665780514477
+2026-06-10 13:33:53,673 - INFO - main - step 8300: total_loss: 1.91016073346138, prompt_loss: 1.420529646873474, contrastive_loss: 0.31796017731772735
+2026-06-10 13:34:06,606 - INFO - main - step 8400: total_loss: 1.9339795517921448, prompt_loss: 1.452529450058937, contrastive_loss: 0.30206971595063803
+2026-06-10 13:34:19,175 - INFO - main - step 8500: total_loss: 1.9020289158821106, prompt_loss: 1.4230861270427704, contrastive_loss: 0.2967561898380518
+2026-06-10 13:34:31,818 - INFO - main - step 8600: total_loss: 2.008471817970276, prompt_loss: 1.5073455357551575, contrastive_loss: 0.3172417322546244
+2026-06-10 13:34:44,594 - INFO - main - step 8700: total_loss: 2.0760530722141266, prompt_loss: 1.5781424021720887, contrastive_loss: 0.30822452656924726
+2026-06-10 13:34:57,290 - INFO - main - step 8800: total_loss: 1.9822545850276947, prompt_loss: [1.4944415], contrastive_loss: 0.3052515451237559
+2026-06-10 13:35:10,487 - INFO - main - step 8900: total_loss: 1.8661975061893463, prompt_loss: 1.3869654870033263, contrastive_loss: 0.29413801107555626
+2026-06-10 13:35:22,840 - INFO - main - step 9000: total_loss: 1.912788280248642, prompt_loss: 1.3936148869991303, contrastive_loss: 0.3231160061061382
+2026-06-10 13:35:22,840 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:35:23,316 - INFO - main - This is epoch "3" of "13" epochs.
+2026-06-10 13:35:39,404 - INFO - main - step 9100: total_loss: 1.9293892216682433, prompt_loss: 1.443208131790161, contrastive_loss: 0.31017924539744857
+2026-06-10 13:35:51,908 - INFO - main - step 9200: total_loss: 1.8489890909194946, prompt_loss: 1.3773001950979233, contrastive_loss: 0.2897357274591923
+2026-06-10 13:36:04,470 - INFO - main - step 9300: total_loss: 1.9522755575180053, prompt_loss: 1.473844870328903, contrastive_loss: 0.3152594903111458
+2026-06-10 13:36:17,399 - INFO - main - step 9400: total_loss: 1.9696583795547484, prompt_loss: 1.5312746328115463, contrastive_loss: 0.2745262363366783
+2026-06-10 13:36:30,357 - INFO - main - step 9500: total_loss: 2.1626137948036193, prompt_loss: 1.659610582590103, contrastive_loss: 0.29219095254316924
+2026-06-10 13:36:43,041 - INFO - main - step 9600: total_loss: 2.0115043365955354, prompt_loss: 1.5385158705711364, contrastive_loss: 0.2998978113941848
+2026-06-10 13:36:55,939 - INFO - main - step 9700: total_loss: 1.8735701775550841, prompt_loss: 1.3946287655830383, contrastive_loss: 0.2901284953765571
+2026-06-10 13:37:08,960 - INFO - main - step 9800: total_loss: 2.007159520983696, prompt_loss: 1.4749859142303468, contrastive_loss: 0.33161822563735766
+2026-06-10 13:37:22,143 - INFO - main - step 9900: total_loss: 1.9654381680488586, prompt_loss: 1.4593372559547424, contrastive_loss: 0.3001685434952378
+2026-06-10 13:37:35,032 - INFO - main - step 10000: total_loss: 1.8389389473199844, prompt_loss: 1.4013684636354446, contrastive_loss: 0.263071653265506
+2026-06-10 13:37:35,032 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:37:48,286 - INFO - main - step 10100: total_loss: 1.9966071653366089, prompt_loss: 1.485844544172287, contrastive_loss: 0.32045769192278384
+2026-06-10 13:38:01,278 - INFO - main - step 10200: total_loss: 1.9363603389263153, prompt_loss: 1.4433136093616485, contrastive_loss: 0.3132349768048152
+2026-06-10 13:38:14,459 - INFO - main - step 10300: total_loss: 1.85366886138916, prompt_loss: 1.4178952884674072, contrastive_loss: 0.2571441176533699
+2026-06-10 13:38:27,490 - INFO - main - step 10400: total_loss: 1.8739150953292847, prompt_loss: 1.3993996220827103, contrastive_loss: 0.28577571565285326
+2026-06-10 13:38:40,550 - INFO - main - step 10500: total_loss: 1.888044376373291, prompt_loss: 1.408322954773903, contrastive_loss: 0.3025538250431418
+2026-06-10 13:38:53,485 - INFO - main - step 10600: total_loss: 1.9234900999069213, prompt_loss: 1.4445693928003311, contrastive_loss: 0.29516074107028545
+2026-06-10 13:39:06,360 - INFO - main - step 10700: total_loss: 1.7907664561271668, prompt_loss: 1.328928635120392, contrastive_loss: 0.2940576765872538
+2026-06-10 13:39:19,429 - INFO - main - step 10800: total_loss: 1.8791847908496857, prompt_loss: 1.4081292670965195, contrastive_loss: 0.295251168650575
+2026-06-10 13:39:32,429 - INFO - main - step 10900: total_loss: 1.7736560082435608, prompt_loss: 1.3228565365076066, contrastive_loss: 0.27677565957419575
+2026-06-10 13:39:45,258 - INFO - main - step 11000: total_loss: 1.9148192954063417, prompt_loss: 1.4375154381990434, contrastive_loss: 0.2940305437892675
+2026-06-10 13:39:45,258 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:39:58,752 - INFO - main - step 11100: total_loss: 1.8472012484073639, prompt_loss: 1.4328423023223877, contrastive_loss: 0.26533149612136187
+2026-06-10 13:40:11,619 - INFO - main - step 11200: total_loss: 2.0508604466915132, prompt_loss: 1.5981449502706528, contrastive_loss: 0.28325784345157445
+2026-06-10 13:40:24,453 - INFO - main - step 11300: total_loss: 2.0707177090644837, prompt_loss: 1.591124101281166, contrastive_loss: 0.29602530784904957
+2026-06-10 13:40:37,198 - INFO - main - step 11400: total_loss: 1.8015098834037782, prompt_loss: 1.3643234944343567, contrastive_loss: 0.28596311828121546
+2026-06-10 13:40:50,523 - INFO - main - step 11500: total_loss: 1.8792644786834716, prompt_loss: 1.4189371889829636, contrastive_loss: 0.28043997378088537
+2026-06-10 13:41:03,627 - INFO - main - step 11600: total_loss: 1.8675147521495818, prompt_loss: 1.4482995337247848, contrastive_loss: 0.2568866358976811
+2026-06-10 13:41:16,640 - INFO - main - step 11700: total_loss: 1.943308470249176, prompt_loss: 1.527740753889084, contrastive_loss: 0.26738102385774254
+2026-06-10 13:41:30,062 - INFO - main - step 11800: total_loss: 1.840558749437332, prompt_loss: 1.3595025676488877, contrastive_loss: 0.3230231337994337
+2026-06-10 13:41:43,267 - INFO - main - step 11900: total_loss: 1.8487352120876313, prompt_loss: 1.3682034015655518, contrastive_loss: 0.297165492400527
+2026-06-10 13:41:56,106 - INFO - main - step 12000: total_loss: 1.8581142097711563, prompt_loss: 1.3785509389638901, contrastive_loss: 0.29299650330096483
+2026-06-10 13:41:56,107 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:41:56,590 - INFO - main - This is epoch "4" of "13" epochs.
+2026-06-10 13:42:12,754 - INFO - main - step 12100: total_loss: 1.9205861985683441, prompt_loss: [1.4609202], contrastive_loss: 0.2909567981958389
+2026-06-10 13:42:25,695 - INFO - main - step 12200: total_loss: 1.8264385974407196, prompt_loss: 1.4006804049015045, contrastive_loss: 0.2588128869980574
+2026-06-10 13:42:38,818 - INFO - main - step 12300: total_loss: 1.783789415359497, prompt_loss: 1.3463310897350311, contrastive_loss: 0.27134620904922485
+2026-06-10 13:42:51,762 - INFO - main - step 12400: total_loss: 1.8500736880302429, prompt_loss: 1.4130231738090515, contrastive_loss: 0.2801985955424607
+2026-06-10 13:43:04,954 - INFO - main - step 12500: total_loss: 1.796054688692093, prompt_loss: 1.3632270586490631, contrastive_loss: 0.2673557620123029
+2026-06-10 13:43:17,704 - INFO - main - step 12600: total_loss: 1.7241772359609604, prompt_loss: 1.3048546755313872, contrastive_loss: 0.26498976986855266
+2026-06-10 13:43:30,553 - INFO - main - step 12700: total_loss: 1.812371574640274, prompt_loss: 1.3742035675048827, contrastive_loss: 0.26550447922199966
+2026-06-10 13:43:43,274 - INFO - main - step 12800: total_loss: 1.8018310022354127, prompt_loss: 1.37228188931942, contrastive_loss: 0.2741749662905931
+2026-06-10 13:43:56,299 - INFO - main - step 12900: total_loss: 1.789295346736908, prompt_loss: 1.366980338692665, contrastive_loss: 0.26691305186599495
+2026-06-10 13:44:09,233 - INFO - main - step 13000: total_loss: 1.8051450765132904, prompt_loss: 1.3496522629261016, contrastive_loss: 0.2938607834465802
+2026-06-10 13:44:09,233 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:44:22,508 - INFO - main - step 13100: total_loss: 1.8420522677898408, prompt_loss: 1.360118466615677, contrastive_loss: 0.2800708762265276
+2026-06-10 13:44:35,231 - INFO - main - step 13200: total_loss: 1.8340018904209137, prompt_loss: 1.3991888976097107, contrastive_loss: 0.2785794821754098
+2026-06-10 13:44:48,149 - INFO - main - step 13300: total_loss: 1.774860218167305, prompt_loss: [1.3639079], contrastive_loss: 0.25860588839743287
+2026-06-10 13:45:00,832 - INFO - main - step 13400: total_loss: 1.7267536616325379, prompt_loss: 1.2953281110525132, contrastive_loss: 0.26036408161744473
+2026-06-10 13:45:13,558 - INFO - main - step 13500: total_loss: 1.7517373913526535, prompt_loss: 1.3261998802423478, contrastive_loss: 0.27153546942397955
+2026-06-10 13:45:26,077 - INFO - main - step 13600: total_loss: 1.774058436155319, prompt_loss: [1.3568943], contrastive_loss: 0.2572410675510764
+2026-06-10 13:45:39,048 - INFO - main - step 13700: total_loss: 1.7498267889022827, prompt_loss: 1.2854834985733032, contrastive_loss: 0.277715863812482
+2026-06-10 13:45:51,800 - INFO - main - step 13800: total_loss: 1.6839518451690674, prompt_loss: 1.264745410680771, contrastive_loss: 0.26151555934920906
+2026-06-10 13:46:04,821 - INFO - main - step 13900: total_loss: 1.8015949350595475, prompt_loss: 1.379714029431343, contrastive_loss: 0.2548538449127227
+2026-06-10 13:46:17,768 - INFO - main - step 14000: total_loss: 1.8261165773868562, prompt_loss: 1.3747756552696229, contrastive_loss: 0.2896409960836172
+2026-06-10 13:46:17,768 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:46:31,726 - INFO - main - step 14100: total_loss: 1.879507966041565, prompt_loss: 1.4245042449235916, contrastive_loss: 0.28547431181184946
+2026-06-10 13:46:44,829 - INFO - main - step 14200: total_loss: 1.8180842065811158, prompt_loss: 1.4116616415977479, contrastive_loss: 0.23525753890164197
+2026-06-10 13:46:57,979 - INFO - main - step 14300: total_loss: 1.7974781453609467, prompt_loss: 1.3914733332395555, contrastive_loss: 0.25489918552339075
+2026-06-10 13:47:11,022 - INFO - main - step 14400: total_loss: 1.689025989174843, prompt_loss: 1.2880902677774428, contrastive_loss: 0.2507523949351162
+2026-06-10 13:47:24,261 - INFO - main - step 14500: total_loss: 1.7071823132038118, prompt_loss: 1.3149355059862138, contrastive_loss: 0.2506849337927997
+2026-06-10 13:47:37,198 - INFO - main - step 14600: total_loss: 1.7696252381801605, prompt_loss: 1.3300682085752487, contrastive_loss: 0.2799273257399909
+2026-06-10 13:47:50,097 - INFO - main - step 14700: total_loss: 1.77993506193161, prompt_loss: 1.362352306842804, contrastive_loss: 0.24739006317220627
+2026-06-10 13:48:03,018 - INFO - main - step 14800: total_loss: 1.828687481880188, prompt_loss: 1.3912838888168335, contrastive_loss: 0.27717497006058694
+2026-06-10 13:48:16,407 - INFO - main - step 14900: total_loss: 1.7135703182220459, prompt_loss: 1.3162167876958848, contrastive_loss: 0.24227286487817765
+2026-06-10 13:48:29,060 - INFO - main - step 15000: total_loss: 1.7131907051801682, prompt_loss: 1.2712723952531815, contrastive_loss: 0.2838538533076644
+2026-06-10 13:48:29,060 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:48:29,540 - INFO - main - This is epoch "5" of "13" epochs.
+2026-06-10 13:48:46,574 - INFO - main - step 15100: total_loss: 1.7675384700298309, prompt_loss: 1.37338651239872, contrastive_loss: 0.2316941864043474
+2026-06-10 13:48:59,390 - INFO - main - step 15200: total_loss: 1.705486726164818, prompt_loss: 1.2854020643234252, contrastive_loss: 0.2565166343282908
+2026-06-10 13:49:12,331 - INFO - main - step 15300: total_loss: 1.7312990587949753, prompt_loss: 1.3363376718759536, contrastive_loss: 0.2510791080072522
+2026-06-10 13:49:25,224 - INFO - main - step 15400: total_loss: 1.8468172001838683, prompt_loss: 1.4044025450944901, contrastive_loss: 0.28148138884454965
+2026-06-10 13:49:38,763 - INFO - main - step 15500: total_loss: 1.8183430695533753, prompt_loss: 1.428683158159256, contrastive_loss: 0.24247488589026034
+2026-06-10 13:49:51,696 - INFO - main - step 15600: total_loss: 1.7327842819690704, prompt_loss: 1.3412623620033264, contrastive_loss: 0.23428772674873471
+2026-06-10 13:50:04,883 - INFO - main - step 15700: total_loss: 1.7829747653007508, prompt_loss: 1.361581219434738, contrastive_loss: 0.26914032008498906
+2026-06-10 13:50:18,069 - INFO - main - step 15800: total_loss: 1.8512128955125808, prompt_loss: 1.4197701573371888, contrastive_loss: 0.26917487310245636
+2026-06-10 13:50:31,605 - INFO - main - step 15900: total_loss: 1.7534749734401702, prompt_loss: 1.3301668536663056, contrastive_loss: 0.26302153094206004
+2026-06-10 13:50:44,636 - INFO - main - step 16000: total_loss: 1.6920910543203354, prompt_loss: 1.2551297265291215, contrastive_loss: 0.26751407779753206
+2026-06-10 13:50:44,636 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:50:57,951 - INFO - main - step 16100: total_loss: 1.7459091114997864, prompt_loss: 1.3143239569664003, contrastive_loss: 0.27145317315123974
+2026-06-10 13:51:11,247 - INFO - main - step 16200: total_loss: 1.6860000014305114, prompt_loss: 1.3155619758367538, contrastive_loss: 0.22733773346990346
+2026-06-10 13:51:24,707 - INFO - main - step 16300: total_loss: 1.7374923777580262, prompt_loss: 1.3357738029956818, contrastive_loss: 0.2523524189740419
+2026-06-10 13:51:37,785 - INFO - main - step 16400: total_loss: 1.5958682680130005, prompt_loss: 1.211555141210556, contrastive_loss: 0.24266924092546105
+2026-06-10 13:51:50,864 - INFO - main - step 16500: total_loss: 1.664613203406334, prompt_loss: 1.2545818716287613, contrastive_loss: 0.25515697825700046
+2026-06-10 13:52:03,673 - INFO - main - step 16600: total_loss: 1.8475337272882462, prompt_loss: 1.3733244866132737, contrastive_loss: 0.27520508915185926
+2026-06-10 13:52:16,958 - INFO - main - step 16700: total_loss: 1.6693166667222976, prompt_loss: 1.2806119829416276, contrastive_loss: 0.2512063370365649
+2026-06-10 13:52:29,781 - INFO - main - step 16800: total_loss: 1.6176276260614395, prompt_loss: 1.2450914621353149, contrastive_loss: 0.23538061599247156
+2026-06-10 13:52:42,995 - INFO - main - step 16900: total_loss: 1.684516886472702, prompt_loss: 1.2592509114742279, contrastive_loss: 0.26865653283894064
+2026-06-10 13:52:56,141 - INFO - main - step 17000: total_loss: 1.7532227647304535, prompt_loss: 1.3434821617603303, contrastive_loss: 0.2602206099592149
+2026-06-10 13:52:56,142 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:53:10,223 - INFO - main - step 17100: total_loss: 1.7875038182735443, prompt_loss: 1.349962421655655, contrastive_loss: 0.27997816985473034
+2026-06-10 13:53:23,528 - INFO - main - step 17200: total_loss: 1.764388046860695, prompt_loss: 1.3296431612968445, contrastive_loss: 0.2684540933129028
+2026-06-10 13:53:36,853 - INFO - main - step 17300: total_loss: 1.7557301914691925, prompt_loss: 1.359620024561882, contrastive_loss: 0.24939845060929655
+2026-06-10 13:53:50,449 - INFO - main - step 17400: total_loss: 1.6995862412452698, prompt_loss: 1.3059656971693039, contrastive_loss: 0.24436623774119653
+2026-06-10 13:54:03,536 - INFO - main - step 17500: total_loss: 1.7206598699092865, prompt_loss: 1.3329509454965591, contrastive_loss: 0.241812449330464
+2026-06-10 13:54:16,887 - INFO - main - step 17600: total_loss: 1.750367643237114, prompt_loss: 1.3695045691728591, contrastive_loss: 0.2246759734582156
+2026-06-10 13:54:29,989 - INFO - main - step 17700: total_loss: 1.6830551701784133, prompt_loss: 1.2823795753717422, contrastive_loss: 0.2547747539321426
+2026-06-10 13:54:43,344 - INFO - main - step 17800: total_loss: 1.7153054040670395, prompt_loss: 1.3009720051288605, contrastive_loss: 0.27121862150728704
+2026-06-10 13:54:56,486 - INFO - main - step 17900: total_loss: 1.7334871679544448, prompt_loss: 1.3250766503810882, contrastive_loss: 0.2529039530828595
+2026-06-10 13:55:09,197 - INFO - main - step 18000: total_loss: 1.8384763342142105, prompt_loss: 1.4322721993923186, contrastive_loss: 0.23389565185119865
+2026-06-10 13:55:09,197 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:55:09,674 - INFO - main - This is epoch "6" of "13" epochs.
+2026-06-10 13:55:26,255 - INFO - main - step 18100: total_loss: 1.7620030069351196, prompt_loss: 1.3488477551937104, contrastive_loss: 0.2578623472270556
+2026-06-10 13:55:39,265 - INFO - main - step 18200: total_loss: 1.7335901266336442, prompt_loss: 1.328653085231781, contrastive_loss: 0.2398254880681634
+2026-06-10 13:55:52,221 - INFO - main - step 18300: total_loss: 1.6996212017536163, prompt_loss: 1.3094248402118682, contrastive_loss: 0.2518236284144223
+2026-06-10 13:56:05,499 - INFO - main - step 18400: total_loss: 1.6517546504735947, prompt_loss: 1.255747247338295, contrastive_loss: 0.23852299731224774
+2026-06-10 13:56:19,107 - INFO - main - step 18500: total_loss: 1.5754280924797057, prompt_loss: [1.2196423], contrastive_loss: 0.2291449646378169
+2026-06-10 13:56:32,228 - INFO - main - step 18600: total_loss: 1.612734541296959, prompt_loss: 1.2411779123544693, contrastive_loss: 0.21948679644614458
+2026-06-10 13:56:45,306 - INFO - main - step 18700: total_loss: 1.664753737449646, prompt_loss: 1.2728840148448943, contrastive_loss: 0.2353580631496152
+2026-06-10 13:56:58,205 - INFO - main - step 18800: total_loss: 1.7040344315767288, prompt_loss: 1.304200946688652, contrastive_loss: 0.24810416446998715
+2026-06-10 13:57:11,911 - INFO - main - step 18900: total_loss: 1.7420823907852172, prompt_loss: 1.3577717834711074, contrastive_loss: 0.23293734431266785
+2026-06-10 13:57:25,009 - INFO - main - step 19000: total_loss: 1.7439209979772567, prompt_loss: [1.3286024], contrastive_loss: 0.25471915205940604
+2026-06-10 13:57:25,009 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:57:38,367 - INFO - main - step 19100: total_loss: 1.7375712156295777, prompt_loss: 1.3141146379709243, contrastive_loss: 0.2662975388485938
+2026-06-10 13:57:51,675 - INFO - main - step 19200: total_loss: 1.664265746474266, prompt_loss: [1.2910503], contrastive_loss: 0.2327483520633541
+2026-06-10 13:58:04,888 - INFO - main - step 19300: total_loss: 1.6343371176719665, prompt_loss: 1.2477201151847839, contrastive_loss: 0.24504653422161937
+2026-06-10 13:58:18,252 - INFO - main - step 19400: total_loss: 1.731980004310608, prompt_loss: 1.2910391014814377, contrastive_loss: 0.2650491432193667
+2026-06-10 13:58:31,391 - INFO - main - step 19500: total_loss: 1.780282701253891, prompt_loss: 1.3923710703849792, contrastive_loss: 0.2505938315019012
+2026-06-10 13:58:45,009 - INFO - main - step 19600: total_loss: 1.7958322608470916, prompt_loss: 1.3949451208114625, contrastive_loss: 0.24313031777739524
+2026-06-10 13:58:58,175 - INFO - main - step 19700: total_loss: 1.853772599697113, prompt_loss: 1.44268457531929, contrastive_loss: 0.2516435146611184
+2026-06-10 13:59:11,271 - INFO - main - step 19800: total_loss: 1.763979080915451, prompt_loss: 1.3872890305519103, contrastive_loss: 0.2244242775440216
+2026-06-10 13:59:24,287 - INFO - main - step 19900: total_loss: 1.7191329026222228, prompt_loss: 1.3165653991699218, contrastive_loss: 0.2517846944369376
+2026-06-10 13:59:37,935 - INFO - main - step 20000: total_loss: 1.6482424634695052, prompt_loss: 1.2849425816535949, contrastive_loss: 0.23810545017942786
+2026-06-10 13:59:37,936 - INFO - main - ###### Taking snapshot ######
+2026-06-10 13:59:51,226 - INFO - main - step 20100: total_loss: 1.646873072385788, prompt_loss: 1.2763879680633545, contrastive_loss: 0.22198557144030928
+2026-06-10 14:00:04,181 - INFO - main - step 20200: total_loss: 1.7168836605548858, prompt_loss: 1.3116315525770188, contrastive_loss: 0.26623038759455087
+2026-06-10 14:00:17,208 - INFO - main - step 20300: total_loss: 1.6822912001609802, prompt_loss: 1.2816135609149932, contrastive_loss: 0.2500830412376672
+2026-06-10 14:00:30,671 - INFO - main - step 20400: total_loss: 1.630236781835556, prompt_loss: [1.2432144], contrastive_loss: 0.2317776242084801
+2026-06-10 14:00:43,821 - INFO - main - step 20500: total_loss: 1.620352298617363, prompt_loss: 1.2746541154384614, contrastive_loss: 0.2037910345662385
+2026-06-10 14:00:56,693 - INFO - main - step 20600: total_loss: 1.6848148602247237, prompt_loss: 1.3148480921983718, contrastive_loss: 0.24010389011353253
+2026-06-10 14:01:09,780 - INFO - main - step 20700: total_loss: 1.7332587069272996, prompt_loss: [1.3220482], contrastive_loss: 0.24490304166451096
+2026-06-10 14:01:23,682 - INFO - main - step 20800: total_loss: 1.6980784726142883, prompt_loss: 1.3024288821220398, contrastive_loss: 0.2618071175692603
+2026-06-10 14:01:36,847 - INFO - main - step 20900: total_loss: 1.714251606464386, prompt_loss: 1.3381540280580522, contrastive_loss: 0.230388857210055
+2026-06-10 14:01:49,748 - INFO - main - step 21000: total_loss: 1.6688745266199112, prompt_loss: 1.287819163799286, contrastive_loss: 0.24444738950114697
+2026-06-10 14:01:49,749 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:01:50,221 - INFO - main - This is epoch "7" of "13" epochs.
+2026-06-10 14:02:07,609 - INFO - main - step 21100: total_loss: 1.6686387050151825, prompt_loss: 1.2857845276594162, contrastive_loss: 0.23449311655480415
+2026-06-10 14:02:20,775 - INFO - main - step 21200: total_loss: 1.6503107368946075, prompt_loss: 1.2973979198932648, contrastive_loss: 0.2239327294495888
+2026-06-10 14:02:33,877 - INFO - main - step 21300: total_loss: 1.7587597453594208, prompt_loss: 1.3344127976894378, contrastive_loss: 0.2546678740158677
+2026-06-10 14:02:47,702 - INFO - main - step 21400: total_loss: 1.7259940195083618, prompt_loss: 1.324686107635498, contrastive_loss: 0.243118274086155
+2026-06-10 14:03:00,668 - INFO - main - step 21500: total_loss: 1.7314594411849975, prompt_loss: 1.359729284644127, contrastive_loss: 0.21614478308707474
+2026-06-10 14:03:13,951 - INFO - main - step 21600: total_loss: 1.6383644044399261, prompt_loss: 1.279039188027382, contrastive_loss: 0.22922437477624044
+2026-06-10 14:03:27,275 - INFO - main - step 21700: total_loss: 1.6026291143894196, prompt_loss: 1.2436611831188202, contrastive_loss: 0.2256965193664655
+2026-06-10 14:03:41,229 - INFO - main - step 21800: total_loss: 1.667765162587166, prompt_loss: 1.2886863565444946, contrastive_loss: 0.2333325264416635
+2026-06-10 14:03:54,474 - INFO - main - step 21900: total_loss: 1.6657756519317628, prompt_loss: 1.3101556742191314, contrastive_loss: 0.2216812070272863
+2026-06-10 14:04:07,762 - INFO - main - step 22000: total_loss: 1.7172617602348328, prompt_loss: 1.2986256062984467, contrastive_loss: 0.26422511622775346
+2026-06-10 14:04:07,762 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:04:21,299 - INFO - main - step 22100: total_loss: 1.7627299207448959, prompt_loss: 1.3460350441932678, contrastive_loss: 0.24329637659713627
+2026-06-10 14:04:35,239 - INFO - main - step 22200: total_loss: 1.7046320396661758, prompt_loss: 1.3324089229106904, contrastive_loss: 0.21347157703712583
+2026-06-10 14:04:48,441 - INFO - main - step 22300: total_loss: 1.605147922039032, prompt_loss: 1.2480230772495269, contrastive_loss: 0.224862646618858
+2026-06-10 14:05:01,853 - INFO - main - step 22400: total_loss: 1.7151897835731507, prompt_loss: 1.337856884598732, contrastive_loss: 0.227102140923962
+2026-06-10 14:05:15,149 - INFO - main - step 22500: total_loss: 1.6142472702264785, prompt_loss: 1.236783021092415, contrastive_loss: 0.23060923953074963
+2026-06-10 14:05:28,999 - INFO - main - step 22600: total_loss: 1.649674922823906, prompt_loss: 1.2728459990024568, contrastive_loss: 0.24082072160905227
+2026-06-10 14:05:42,327 - INFO - main - step 22700: total_loss: 1.6274025064706803, prompt_loss: 1.2457771664857864, contrastive_loss: 0.23591977763921024
+2026-06-10 14:05:55,726 - INFO - main - step 22800: total_loss: 1.6585422760248185, prompt_loss: 1.257991959452629, contrastive_loss: 0.24373224373906852
+2026-06-10 14:06:09,513 - INFO - main - step 22900: total_loss: 1.6634153145551682, prompt_loss: 1.3028830862045289, contrastive_loss: 0.22574604353867472
+2026-06-10 14:06:22,535 - INFO - main - step 23000: total_loss: 1.653586159348488, prompt_loss: 1.2878240358829498, contrastive_loss: 0.21858259263448418
+2026-06-10 14:06:22,536 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:06:35,969 - INFO - main - step 23100: total_loss: 1.624745232462883, prompt_loss: 1.2805944663286208, contrastive_loss: 0.20086098702158778
+2026-06-10 14:06:48,677 - INFO - main - step 23200: total_loss: 1.6122064423561095, prompt_loss: [1.2507116], contrastive_loss: 0.23443746630102397
+2026-06-10 14:07:01,657 - INFO - main - step 23300: total_loss: 1.658999326825142, prompt_loss: 1.3054902863502502, contrastive_loss: 0.2221862262301147
+2026-06-10 14:07:15,180 - INFO - main - step 23400: total_loss: 1.7276532137393952, prompt_loss: [1.3445941], contrastive_loss: 0.21991622965200805
+2026-06-10 14:07:28,496 - INFO - main - step 23500: total_loss: 1.7450722467899322, prompt_loss: 1.3518363708257675, contrastive_loss: 0.2489756778581068
+2026-06-10 14:07:41,814 - INFO - main - step 23600: total_loss: 1.536623678803444, prompt_loss: [1.198758], contrastive_loss: 0.20416868721134962
+2026-06-10 14:07:55,717 - INFO - main - step 23700: total_loss: 1.6205286973714828, prompt_loss: 1.2395028215646744, contrastive_loss: 0.2383492900431156
+2026-06-10 14:08:09,124 - INFO - main - step 23800: total_loss: 1.7098859345912933, prompt_loss: 1.2898023921251296, contrastive_loss: 0.25154473646427505
+2026-06-10 14:08:22,290 - INFO - main - step 23900: total_loss: 1.6063667559623718, prompt_loss: 1.2255294716358185, contrastive_loss: 0.21668735315091908
+2026-06-10 14:08:35,210 - INFO - main - step 24000: total_loss: 1.6667260992527009, prompt_loss: 1.293795457482338, contrastive_loss: 0.2325217462424189
+2026-06-10 14:08:35,210 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:08:35,710 - INFO - main - This is epoch "8" of "13" epochs.
+2026-06-10 14:08:52,662 - INFO - main - step 24100: total_loss: 1.7963928228616715, prompt_loss: 1.3626492315530776, contrastive_loss: 0.2678882437478751
+2026-06-10 14:09:05,850 - INFO - main - step 24200: total_loss: 1.6899077492952346, prompt_loss: 1.2643072605133057, contrastive_loss: 0.2582181019335985
+2026-06-10 14:09:19,174 - INFO - main - step 24300: total_loss: 1.60451353430748, prompt_loss: 1.2743184447288514, contrastive_loss: 0.19247321225062478
+2026-06-10 14:09:33,027 - INFO - main - step 24400: total_loss: 1.6252309250831605, prompt_loss: 1.2738247191905976, contrastive_loss: 0.22440771460533143
+2026-06-10 14:09:46,220 - INFO - main - step 24500: total_loss: 1.7506063896417619, prompt_loss: 1.3367635041475296, contrastive_loss: 0.24766615198925138
+2026-06-10 14:09:59,459 - INFO - main - step 24600: total_loss: 1.6518406915664672, prompt_loss: 1.2893213945627213, contrastive_loss: 0.23362349615665154
+2026-06-10 14:10:12,616 - INFO - main - step 24700: total_loss: 1.6696259701251983, prompt_loss: 1.3318694841861725, contrastive_loss: 0.2100472935475409
+2026-06-10 14:10:26,812 - INFO - main - step 24800: total_loss: 1.6782571738958358, prompt_loss: 1.3055690234899522, contrastive_loss: 0.22954855993390083
+2026-06-10 14:10:40,042 - INFO - main - step 24900: total_loss: 1.622704199552536, prompt_loss: 1.241155641078949, contrastive_loss: 0.24476138514466583
+2026-06-10 14:10:53,452 - INFO - main - step 25000: total_loss: 1.6323009717464447, prompt_loss: 1.2545116925239563, contrastive_loss: 0.23302819833159447
+2026-06-10 14:10:53,453 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:11:07,039 - INFO - main - step 25100: total_loss: 1.7040424168109893, prompt_loss: 1.3036210799217225, contrastive_loss: 0.24392799526453018
+2026-06-10 14:11:21,048 - INFO - main - step 25200: total_loss: 1.5906775766611099, prompt_loss: 1.2592601811885833, contrastive_loss: 0.19861430590972304
+2026-06-10 14:11:34,332 - INFO - main - step 25300: total_loss: 1.6752595269680024, prompt_loss: 1.3274838131666185, contrastive_loss: 0.19926373030059039
+2026-06-10 14:11:47,875 - INFO - main - step 25400: total_loss: 1.5757564491033553, prompt_loss: 1.217112729549408, contrastive_loss: 0.2327469117473811
+2026-06-10 14:12:01,825 - INFO - main - step 25500: total_loss: 1.6929212248325347, prompt_loss: [1.3091754], contrastive_loss: 0.23985781189752742
+2026-06-10 14:12:15,140 - INFO - main - step 25600: total_loss: 1.6366858106851578, prompt_loss: 1.2814292323589325, contrastive_loss: 0.21783430819166824
+2026-06-10 14:12:28,507 - INFO - main - step 25700: total_loss: 1.6345757842063904, prompt_loss: 1.3054188460111618, contrastive_loss: 0.20876820077188313
+2026-06-10 14:12:42,014 - INFO - main - step 25800: total_loss: 1.611460948586464, prompt_loss: 1.2303847527503968, contrastive_loss: 0.221597854050342
+2026-06-10 14:12:56,110 - INFO - main - step 25900: total_loss: 1.5435556823015213, prompt_loss: 1.1871429949998855, contrastive_loss: 0.2201927996147424
+2026-06-10 14:13:09,006 - INFO - main - step 26000: total_loss: 1.6314790534973145, prompt_loss: 1.272470434308052, contrastive_loss: 0.22898244905751197
+2026-06-10 14:13:09,006 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:13:22,237 - INFO - main - step 26100: total_loss: 1.5287161201238633, prompt_loss: 1.1958466750383376, contrastive_loss: 0.19782949628774077
+2026-06-10 14:13:35,531 - INFO - main - step 26200: total_loss: 1.7419510293006897, prompt_loss: 1.3906167763471604, contrastive_loss: 0.21648169664200395
+2026-06-10 14:13:49,512 - INFO - main - step 26300: total_loss: 1.660524803996086, prompt_loss: 1.3148742055892944, contrastive_loss: 0.20797635244671256
+2026-06-10 14:14:02,688 - INFO - main - step 26400: total_loss: 1.615512346625328, prompt_loss: 1.2688304823637009, contrastive_loss: 0.22965556189999917
+2026-06-10 14:14:15,810 - INFO - main - step 26500: total_loss: 1.6462131106853486, prompt_loss: 1.319513111114502, contrastive_loss: 0.1959784834366292
+2026-06-10 14:14:28,856 - INFO - main - step 26600: total_loss: 1.6614593696594238, prompt_loss: 1.3054380643367767, contrastive_loss: 0.21563906637020408
+2026-06-10 14:14:42,597 - INFO - main - step 26700: total_loss: 1.6272793596982955, prompt_loss: 1.280342503786087, contrastive_loss: 0.21074632714036853
+2026-06-10 14:14:55,644 - INFO - main - step 26800: total_loss: 1.643014476299286, prompt_loss: 1.2770132952928543, contrastive_loss: 0.22748984004836528
+2026-06-10 14:15:08,604 - INFO - main - step 26900: total_loss: 1.580295587182045, prompt_loss: 1.2618963849544524, contrastive_loss: 0.193231998430565
+2026-06-10 14:15:21,292 - INFO - main - step 27000: total_loss: 1.5733916610479355, prompt_loss: 1.2305698764324189, contrastive_loss: 0.2121784885841771
+2026-06-10 14:15:21,292 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:15:21,772 - INFO - main - This is epoch "9" of "13" epochs.
+2026-06-10 14:15:38,968 - INFO - main - step 27100: total_loss: 1.7067706787586212, prompt_loss: 1.319478942155838, contrastive_loss: 0.2489580244384706
+2026-06-10 14:15:52,147 - INFO - main - step 27200: total_loss: 1.6901781392097472, prompt_loss: 1.294749943614006, contrastive_loss: 0.23484243717044592
+2026-06-10 14:16:05,287 - INFO - main - step 27300: total_loss: 1.6160406321287155, prompt_loss: 1.2687371802330016, contrastive_loss: 0.2079619199456647
+2026-06-10 14:16:18,532 - INFO - main - step 27400: total_loss: 1.6474631816148757, prompt_loss: 1.2716984736919403, contrastive_loss: 0.21820972081273793
+2026-06-10 14:16:32,264 - INFO - main - step 27500: total_loss: 1.6309411907196045, prompt_loss: 1.267650334239006, contrastive_loss: 0.2307430867361836
+2026-06-10 14:16:45,342 - INFO - main - step 27600: total_loss: 1.561168713569641, prompt_loss: 1.2169449889659882, contrastive_loss: 0.2024741348437965
+2026-06-10 14:16:58,307 - INFO - main - step 27700: total_loss: 1.6121703857183456, prompt_loss: 1.2350171548128128, contrastive_loss: 0.22858010164927692
+2026-06-10 14:17:11,703 - INFO - main - step 27800: total_loss: 1.6233455264568328, prompt_loss: 1.2781815576553344, contrastive_loss: 0.2170698156511935
+2026-06-10 14:17:25,812 - INFO - main - step 27900: total_loss: 1.4993472772836685, prompt_loss: 1.185897027850151, contrastive_loss: 0.18754029889125376
+2026-06-10 14:17:39,002 - INFO - main - step 28000: total_loss: 1.6174888294935226, prompt_loss: 1.261203823685646, contrastive_loss: 0.21560120476875455
+2026-06-10 14:17:39,003 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:17:52,749 - INFO - main - step 28100: total_loss: 1.6814248013496398, prompt_loss: 1.2936356109380722, contrastive_loss: 0.23620216187962798
+2026-06-10 14:18:05,991 - INFO - main - step 28200: total_loss: 1.6979421776533128, prompt_loss: [1.3499837], contrastive_loss: 0.21399450642522425
+2026-06-10 14:18:20,134 - INFO - main - step 28300: total_loss: 1.6492669701576232, prompt_loss: 1.2959987169504166, contrastive_loss: 0.2088033955032006
+2026-06-10 14:18:33,331 - INFO - main - step 28400: total_loss: 1.5899799108505248, prompt_loss: 1.2418611001968385, contrastive_loss: 0.1973177724686684
+2026-06-10 14:18:46,382 - INFO - main - step 28500: total_loss: 1.593662428855896, prompt_loss: 1.2259658253192902, contrastive_loss: 0.22708030645386315
+2026-06-10 14:18:59,504 - INFO - main - step 28600: total_loss: 1.5808952927589417, prompt_loss: 1.2551657009124755, contrastive_loss: 0.21236783608794213
+2026-06-10 14:19:13,175 - INFO - main - step 28700: total_loss: 1.6233983623981476, prompt_loss: 1.2618461263179779, contrastive_loss: 0.22675769348163158
+2026-06-10 14:19:26,208 - INFO - main - step 28800: total_loss: 1.5279792296886443, prompt_loss: 1.1976345771551131, contrastive_loss: 0.19463591314852238
+2026-06-10 14:19:39,290 - INFO - main - step 28900: total_loss: 1.5329762750864029, prompt_loss: 1.1943347769975663, contrastive_loss: 0.21643517967313528
+2026-06-10 14:19:52,417 - INFO - main - step 29000: total_loss: 1.6363451045751571, prompt_loss: 1.2786451214551926, contrastive_loss: 0.21411318120546638
+2026-06-10 14:19:52,417 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:20:06,631 - INFO - main - step 29100: total_loss: 1.547313444018364, prompt_loss: [1.2110194], contrastive_loss: 0.19363738923333584
+2026-06-10 14:20:19,531 - INFO - main - step 29200: total_loss: 1.6695054978132249, prompt_loss: 1.3250513887405395, contrastive_loss: 0.21425139909260907
+2026-06-10 14:20:32,720 - INFO - main - step 29300: total_loss: 1.5989932769536972, prompt_loss: 1.2646379083395005, contrastive_loss: 0.200047028377885
+2026-06-10 14:20:45,840 - INFO - main - step 29400: total_loss: 1.6527332258224487, prompt_loss: 1.3058608955144881, contrastive_loss: 0.20591909126378596
+2026-06-10 14:20:59,916 - INFO - main - step 29500: total_loss: 1.5747374963760377, prompt_loss: [1.2487984], contrastive_loss: 0.2045957763021579
+2026-06-10 14:21:13,225 - INFO - main - step 29600: total_loss: 1.5615820288658142, prompt_loss: 1.2068955081701278, contrastive_loss: 0.2218376209307462
+2026-06-10 14:21:26,455 - INFO - main - step 29700: total_loss: 1.5905935621261598, prompt_loss: 1.2416148972511292, contrastive_loss: 0.2117953194770962
+2026-06-10 14:21:39,458 - INFO - main - step 29800: total_loss: 1.5388594573736192, prompt_loss: [1.2243071], contrastive_loss: 0.1972452588775195
+2026-06-10 14:21:52,606 - INFO - main - step 29900: total_loss: 1.5642263174057007, prompt_loss: 1.2288220047950744, contrastive_loss: 0.2073875806061551
+2026-06-10 14:22:06,173 - INFO - main - step 30000: total_loss: 1.6938545048236846, prompt_loss: 1.312417632341385, contrastive_loss: 0.22277151500806214
+2026-06-10 14:22:06,174 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:22:06,669 - INFO - main - This is epoch "10" of "13" epochs.
+2026-06-10 14:22:23,543 - INFO - main - step 30100: total_loss: 1.6599504792690276, prompt_loss: 1.296049293279648, contrastive_loss: 0.21609718729741872
+2026-06-10 14:22:37,526 - INFO - main - step 30200: total_loss: 1.5368379026651382, prompt_loss: [1.2064866], contrastive_loss: 0.20612614117097108
+2026-06-10 14:22:51,176 - INFO - main - step 30300: total_loss: 1.652183684706688, prompt_loss: 1.3080799394845963, contrastive_loss: 0.20111943133175372
+2026-06-10 14:23:04,734 - INFO - main - step 30400: total_loss: 1.6584068715572358, prompt_loss: 1.324718292951584, contrastive_loss: 0.1921444736653939
+2026-06-10 14:23:18,207 - INFO - main - step 30500: total_loss: 1.7585493981838227, prompt_loss: 1.3885650086402892, contrastive_loss: 0.22142003349028527
+2026-06-10 14:23:32,415 - INFO - main - step 30600: total_loss: 1.5094532036781312, prompt_loss: [1.1978803], contrastive_loss: 0.18152554012369365
+2026-06-10 14:23:46,008 - INFO - main - step 30700: total_loss: 1.5641433471441268, prompt_loss: 1.262253994345665, contrastive_loss: 0.1941024007415399
+2026-06-10 14:23:59,584 - INFO - main - step 30800: total_loss: 1.5705633091926574, prompt_loss: 1.2259495705366135, contrastive_loss: 0.21365963021293283
+2026-06-10 14:24:12,863 - INFO - main - step 30900: total_loss: 1.508396753668785, prompt_loss: 1.2244382745027542, contrastive_loss: 0.1740768224420026
+2026-06-10 14:24:27,144 - INFO - main - step 31000: total_loss: 1.6164366978406906, prompt_loss: 1.2873141467571259, contrastive_loss: 0.1959721563034691
+2026-06-10 14:24:27,144 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:24:41,050 - INFO - main - step 31100: total_loss: 1.6156907492876054, prompt_loss: 1.272355296611786, contrastive_loss: 0.21105550615990068
+2026-06-10 14:24:54,447 - INFO - main - step 31200: total_loss: 1.5702500808238984, prompt_loss: [1.245995], contrastive_loss: 0.19757689701393247
+2026-06-10 14:25:08,812 - INFO - main - step 31300: total_loss: 1.5443359446525573, prompt_loss: 1.2189434969425201, contrastive_loss: 0.20402175820432603
+2026-06-10 14:25:22,165 - INFO - main - step 31400: total_loss: 1.6500939071178435, prompt_loss: 1.2946695268154145, contrastive_loss: 0.22338640389963985
+2026-06-10 14:25:35,568 - INFO - main - step 31500: total_loss: 1.5439320957660676, prompt_loss: 1.2259868919849395, contrastive_loss: 0.19605105948401616
+2026-06-10 14:25:49,041 - INFO - main - step 31600: total_loss: 1.6398003882169723, prompt_loss: 1.2901596653461456, contrastive_loss: 0.2105625879392028
+2026-06-10 14:26:03,719 - INFO - main - step 31700: total_loss: 1.5545339125394821, prompt_loss: 1.2260014325380326, contrastive_loss: 0.20479757013730704
+2026-06-10 14:26:17,112 - INFO - main - step 31800: total_loss: 1.587656923532486, prompt_loss: 1.246907788515091, contrastive_loss: 0.20687060708645733
+2026-06-10 14:26:30,422 - INFO - main - step 31900: total_loss: 1.4744287848472595, prompt_loss: 1.1724261218309402, contrastive_loss: 0.18293814723278046
+2026-06-10 14:26:43,827 - INFO - main - step 32000: total_loss: 1.507539120912552, prompt_loss: [1.2143534], contrastive_loss: 0.18230964973612573
+2026-06-10 14:26:43,827 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:26:58,334 - INFO - main - step 32100: total_loss: 1.577966799736023, prompt_loss: 1.2201029455661774, contrastive_loss: 0.22761687076010276
+2026-06-10 14:27:11,697 - INFO - main - step 32200: total_loss: 1.5945245498418807, prompt_loss: 1.2607952880859374, contrastive_loss: 0.21874125324189664
+2026-06-10 14:27:25,301 - INFO - main - step 32300: total_loss: 1.641656836271286, prompt_loss: 1.294749110341072, contrastive_loss: 0.20680383968632668
+2026-06-10 14:27:38,687 - INFO - main - step 32400: total_loss: 1.6056152433156967, prompt_loss: 1.242164860367775, contrastive_loss: 0.22419738017299096
+2026-06-10 14:27:52,773 - INFO - main - step 32500: total_loss: 1.6170350253582, prompt_loss: 1.2583767092227935, contrastive_loss: 0.21003142012748868
+2026-06-10 14:28:06,390 - INFO - main - step 32600: total_loss: 1.6551084119081496, prompt_loss: 1.2920611304044725, contrastive_loss: 0.20201269027777016
+2026-06-10 14:28:19,936 - INFO - main - step 32700: total_loss: 1.6589680129289628, prompt_loss: 1.3085478204488754, contrastive_loss: 0.21410544615238905
+2026-06-10 14:28:33,281 - INFO - main - step 32800: total_loss: 1.619419584274292, prompt_loss: 1.287111107110977, contrastive_loss: 0.2093308546580374
+2026-06-10 14:28:47,667 - INFO - main - step 32900: total_loss: 1.6670100802183152, prompt_loss: [1.3057723], contrastive_loss: 0.22568750308826566
+2026-06-10 14:29:00,805 - INFO - main - step 33000: total_loss: 1.5470880824327469, prompt_loss: 1.1946060061454773, contrastive_loss: 0.22016774440649897
+2026-06-10 14:29:00,806 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:29:01,299 - INFO - main - This is epoch "11" of "13" epochs.
+2026-06-10 14:29:18,922 - INFO - main - step 33100: total_loss: 1.5648901450634003, prompt_loss: [1.2281659], contrastive_loss: 0.20189682062715292
+2026-06-10 14:29:32,287 - INFO - main - step 33200: total_loss: 1.66708405315876, prompt_loss: [1.3258502], contrastive_loss: 0.19913063960149885
+2026-06-10 14:29:45,833 - INFO - main - step 33300: total_loss: 1.670992124080658, prompt_loss: 1.3459935742616653, contrastive_loss: 0.20300345689058305
+2026-06-10 14:29:59,372 - INFO - main - step 33400: total_loss: 1.6186042433977128, prompt_loss: 1.2911372429132462, contrastive_loss: 0.2119689694349654
+2026-06-10 14:30:13,804 - INFO - main - step 33500: total_loss: 1.5687196600437163, prompt_loss: 1.2343060547113418, contrastive_loss: 0.2008603799919365
+2026-06-10 14:30:27,524 - INFO - main - step 33600: total_loss: 1.568416423201561, prompt_loss: 1.2313407951593398, contrastive_loss: 0.1925195639586309
+2026-06-10 14:30:41,054 - INFO - main - step 33700: total_loss: 1.614979528784752, prompt_loss: 1.266799716949463, contrastive_loss: 0.216825692942366
+2026-06-10 14:30:54,613 - INFO - main - step 33800: total_loss: 1.5106002962589264, prompt_loss: [1.1858655], contrastive_loss: 0.18973571370821446
+2026-06-10 14:31:09,164 - INFO - main - step 33900: total_loss: 1.5682337015867234, prompt_loss: 1.2301854234933853, contrastive_loss: 0.2026393572014058
+2026-06-10 14:31:22,593 - INFO - main - step 34000: total_loss: 1.599693421125412, prompt_loss: 1.2735199123620986, contrastive_loss: 0.19845574497710913
+2026-06-10 14:31:22,593 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:31:36,403 - INFO - main - step 34100: total_loss: 1.5639149177074432, prompt_loss: 1.2205281639099121, contrastive_loss: 0.2035243943054229
+2026-06-10 14:31:49,520 - INFO - main - step 34200: total_loss: 1.5695449221134186, prompt_loss: 1.2850793635845184, contrastive_loss: 0.1719699284422677
+2026-06-10 14:32:03,998 - INFO - main - step 34300: total_loss: 1.5842543512582778, prompt_loss: 1.2447226327657699, contrastive_loss: 0.2193910267427418
+2026-06-10 14:32:17,756 - INFO - main - step 34400: total_loss: 1.6192931038141252, prompt_loss: 1.2826380735635758, contrastive_loss: 0.18547183303162457
+2026-06-10 14:32:31,549 - INFO - main - step 34500: total_loss: 1.616499937772751, prompt_loss: 1.2812655621767044, contrastive_loss: 0.19868357221013866
+2026-06-10 14:32:46,250 - INFO - main - step 34600: total_loss: 1.525743120908737, prompt_loss: 1.2007623022794724, contrastive_loss: 0.1971007052785717
+2026-06-10 14:33:00,042 - INFO - main - step 34700: total_loss: 1.617775160074234, prompt_loss: 1.2832181465625763, contrastive_loss: 0.20300988077186047
+2026-06-10 14:33:13,545 - INFO - main - step 34800: total_loss: 1.62088358938694, prompt_loss: 1.2696239590644836, contrastive_loss: 0.21768349424004554
+2026-06-10 14:33:27,289 - INFO - main - step 34900: total_loss: 1.4782904356718063, prompt_loss: 1.2118927884101867, contrastive_loss: 0.15501087132841349
+2026-06-10 14:33:41,870 - INFO - main - step 35000: total_loss: 1.520305187702179, prompt_loss: 1.2276128482818605, contrastive_loss: 0.18045851074159144
+2026-06-10 14:33:41,871 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:33:55,771 - INFO - main - step 35100: total_loss: 1.61868314743042, prompt_loss: 1.2644931393861771, contrastive_loss: 0.22157514636986889
+2026-06-10 14:34:09,232 - INFO - main - step 35200: total_loss: 1.598080463409424, prompt_loss: 1.245633717775345, contrastive_loss: 0.21878831513226032
+2026-06-10 14:34:22,876 - INFO - main - step 35300: total_loss: 1.4969458347558975, prompt_loss: 1.1880447912216185, contrastive_loss: 0.19220720867160707
+2026-06-10 14:34:37,226 - INFO - main - step 35400: total_loss: 1.5062195193767547, prompt_loss: 1.1845957052707672, contrastive_loss: 0.18400402539526112
+2026-06-10 14:34:50,420 - INFO - main - step 35500: total_loss: 1.5564657795429229, prompt_loss: 1.231215896010399, contrastive_loss: 0.19388930895365775
+2026-06-10 14:35:03,659 - INFO - main - step 35600: total_loss: 1.5151962894201279, prompt_loss: 1.1881089675426484, contrastive_loss: 0.19910728415474296
+2026-06-10 14:35:17,044 - INFO - main - step 35700: total_loss: 1.5765249413251876, prompt_loss: 1.2375332903862, contrastive_loss: 0.19498643005732447
+2026-06-10 14:35:31,568 - INFO - main - step 35800: total_loss: 1.5746131896972657, prompt_loss: 1.2038998371362686, contrastive_loss: 0.23416632785927505
+2026-06-10 14:35:44,971 - INFO - main - step 35900: total_loss: 1.4917149716615676, prompt_loss: 1.1759935247898101, contrastive_loss: 0.19411740213166923
+2026-06-10 14:35:58,130 - INFO - main - step 36000: total_loss: 1.5444650065898895, prompt_loss: 1.198744130730629, contrastive_loss: 0.21289355046115815
+2026-06-10 14:35:58,130 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:35:58,641 - INFO - main - This is epoch "12" of "13" epochs.
+2026-06-10 14:36:16,656 - INFO - main - step 36100: total_loss: 1.5681328552961349, prompt_loss: 1.2115911227464675, contrastive_loss: 0.21612418811302633
+2026-06-10 14:36:30,102 - INFO - main - step 36200: total_loss: 1.4887531465291977, prompt_loss: 1.206858949661255, contrastive_loss: 0.1708969208272174
+2026-06-10 14:36:43,515 - INFO - main - step 36300: total_loss: 1.4800660413503648, prompt_loss: 1.154438139796257, contrastive_loss: 0.19409424742683767
+2026-06-10 14:36:57,296 - INFO - main - step 36400: total_loss: 1.6095058476924897, prompt_loss: 1.2618190306425094, contrastive_loss: 0.2110173188848421
+2026-06-10 14:37:11,510 - INFO - main - step 36500: total_loss: 1.648038427233696, prompt_loss: 1.287890755534172, contrastive_loss: 0.22082479761447757
+2026-06-10 14:37:25,010 - INFO - main - step 36600: total_loss: 1.5704765045642852, prompt_loss: [1.2212392], contrastive_loss: 0.2098296329402365
+2026-06-10 14:37:38,664 - INFO - main - step 36700: total_loss: 1.6006659114360808, prompt_loss: 1.2807591718435287, contrastive_loss: 0.20303388565778732
+2026-06-10 14:37:53,498 - INFO - main - step 36800: total_loss: 1.5829681622982026, prompt_loss: 1.2500823265314103, contrastive_loss: 0.20393616128712894
+2026-06-10 14:38:07,038 - INFO - main - step 36900: total_loss: 1.565530951023102, prompt_loss: 1.2339434397220612, contrastive_loss: 0.20183034714544193
+2026-06-10 14:38:20,533 - INFO - main - step 37000: total_loss: 1.5224162656068803, prompt_loss: 1.2230594623088837, contrastive_loss: 0.18438087179791182
+2026-06-10 14:38:20,534 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:38:34,511 - INFO - main - step 37100: total_loss: 1.5656776255369187, prompt_loss: 1.2488076460361481, contrastive_loss: 0.18993260625749828
+2026-06-10 14:38:49,075 - INFO - main - step 37200: total_loss: 1.6257007724046708, prompt_loss: 1.275263605117798, contrastive_loss: 0.21529714516364037
+2026-06-10 14:39:02,587 - INFO - main - step 37300: total_loss: 1.5584769999980927, prompt_loss: 1.2262616437673568, contrastive_loss: 0.19989635670557618
+2026-06-10 14:39:16,071 - INFO - main - step 37400: total_loss: 1.5564484137296677, prompt_loss: 1.22427561044693, contrastive_loss: 0.1949105872178916
+2026-06-10 14:39:29,730 - INFO - main - step 37500: total_loss: 1.5528024977445603, prompt_loss: 1.223149800300598, contrastive_loss: 0.1983347194455564
+2026-06-10 14:39:44,280 - INFO - main - step 37600: total_loss: 1.511874343752861, prompt_loss: 1.197152910232544, contrastive_loss: 0.19052329279365948
+2026-06-10 14:39:57,885 - INFO - main - step 37700: total_loss: 1.5791055089235306, prompt_loss: 1.2213454997539521, contrastive_loss: 0.20944912236183882
+2026-06-10 14:40:11,543 - INFO - main - step 37800: total_loss: 1.5697517472505569, prompt_loss: 1.246456897854805, contrastive_loss: 0.20144570558564737
+2026-06-10 14:40:25,144 - INFO - main - step 37900: total_loss: 1.6494417262077332, prompt_loss: 1.2961583757400512, contrastive_loss: 0.21118838546797633
+2026-06-10 14:40:39,738 - INFO - main - step 38000: total_loss: 1.5794464057683946, prompt_loss: 1.2557569468021392, contrastive_loss: 0.19776835558004677
+2026-06-10 14:40:39,738 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:40:53,773 - INFO - main - step 38100: total_loss: 1.5960666757822037, prompt_loss: 1.235061250925064, contrastive_loss: 0.22678674519294872
+2026-06-10 14:41:07,590 - INFO - main - step 38200: total_loss: 1.604099925160408, prompt_loss: 1.284450622200966, contrastive_loss: 0.2007292226352729
+2026-06-10 14:41:22,169 - INFO - main - step 38300: total_loss: 1.5330925816297531, prompt_loss: 1.22491382420063, contrastive_loss: 0.18846510206349193
+2026-06-10 14:41:36,121 - INFO - main - step 38400: total_loss: 1.50670800447464, prompt_loss: 1.2075445693731308, contrastive_loss: 0.18056839081982617
+2026-06-10 14:41:49,782 - INFO - main - step 38500: total_loss: 1.5333923989534377, prompt_loss: 1.2163309401273728, contrastive_loss: 0.1891362147894688
+2026-06-10 14:42:03,516 - INFO - main - step 38600: total_loss: 1.5605911684036256, prompt_loss: 1.2285096049308777, contrastive_loss: 0.20515002975938842
+2026-06-10 14:42:18,193 - INFO - main - step 38700: total_loss: 1.5402800863981247, prompt_loss: 1.2504687809944153, contrastive_loss: 0.1761105231032707
+2026-06-10 14:42:31,748 - INFO - main - step 38800: total_loss: 1.5230797320604323, prompt_loss: 1.1951239156723021, contrastive_loss: 0.21002703012898563
+2026-06-10 14:42:45,520 - INFO - main - step 38900: total_loss: 1.5153032940626145, prompt_loss: 1.2160305601358414, contrastive_loss: 0.17744891553302294
+2026-06-10 14:42:58,615 - INFO - main - step 39000: total_loss: 1.6100465083122253, prompt_loss: 1.3020440340042114, contrastive_loss: 0.19117240467574448
+2026-06-10 14:42:58,615 - INFO - main - ###### Taking snapshot ######
+2026-06-10 14:42:59,255 - INFO - main - End of training.
